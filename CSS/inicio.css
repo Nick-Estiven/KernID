@@ -1,0 +1,332 @@
+body{
+    background-color: black;
+    color: rgb(255, 255, 255);    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: "Host Grotesk", Helvetica, sans-serif;
+}   
+
+.menu {
+    flex-direction: row;
+    height: 5.7vw;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    transition: top 0.3s ease-in-out; 
+}
+
+.menu.oculto {
+    top: -100px; /* Empuja la barra 85 píxeles hacia arriba (sacándola del monitor) */
+    
+}
+
+.logo-nombre {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 25%;
+}
+
+.logo {
+    height: clamp(30px, 5.3vw, 85px);
+    width: auto;
+    margin-right: 0;
+    padding-top: 1.5vw;
+    padding-left: 1vw;
+    filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 1));
+}
+
+.nombre {
+    margin: 0;
+    font-size: 3rem;
+    padding-left: 1%;
+    padding-top: 1.3vw;
+    color: rgb(252, 252, 252);
+    filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 1));
+}
+
+.search-box {
+     display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    padding: 6px 14px;
+    
+    /* LA MAGIA EFICIENTE: Le dice al buscador que use el espacio del centro 
+       y que tenga un tamaño máximo controlado en PC para que no se deforme */
+    flex-grow: 1; 
+    max-width: 320px; 
+    transition: all 0.3s ease;
+     position: relative;
+    width: 100%;
+    max-width: 650px;
+    background-color: #f7f8f825;
+    border-radius: 30px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    height: 40%;
+    margin-top: 35px;
+    transition: all 1s ease-in-out;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 15px 25px;
+    background: transparent;
+    border: none; /* Elimina el borde por defecto */
+    outline: none; /* Elimina el borde de enfoque por defecto */
+    font-size: 16px;
+    color: #0c0c0c;
+    border-radius: 30px;
+}
+
+/* Efecto visual al hacer clic en el buscador */
+.search-box:focus-within {
+    box-shadow: 0 4px 20px rgba(0, 123, 255, 0.384);
+}
+
+.search-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 20px rgba(0, 123, 255, 0.384);
+}
+
+.menu-right {
+    display: flex;
+    width: 30%;
+    padding-left: 3%;
+    margin-right: 0;
+    gap: 30px;
+}
+
+.menu-right a {
+    font-size: 1rem;
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 10%;
+    font-weight: 50;
+    transition: all 0.4s ease-in-out;
+    text-decoration-line: none;
+    color: white;
+}
+
+.menu-right a:visited {
+    color: white;
+}
+
+.menu-right a:hover {
+    transform: scale(1.1);
+}
+
+.menu-right {
+    display: flex;
+    width: 30%;
+    padding-left: 3%;
+    margin-right: 0;
+    gap: 30px;
+}
+
+
+.menu-right p:hover {
+    transform: scale(1.1);
+}
+
+#portada {
+    background-image: url(../imagenes/Fondos/Fondo\ Inicio.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    margin-bottom: 0;
+    margin-top: 0;
+    
+    z-index: 10;        /* Pone la portada por encima del bloque negro para que la sombra no se tape */
+
+    /* 👇 LA TRICIÓN: Proyecta el brillo celeste hacia abajo */
+    /* X-offset  Y-offset  Difuminado  Expansión  Color(Celeste blanquecino) */
+    box-shadow: 0px 20px 20px 1px rgba(3, 3, 3, 0.76);
+}
+
+.temas {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 7%;
+    margin-bottom: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 80%;
+    
+}
+
+.armamento-v-navales {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+}
+
+.armamento {
+    background-image: url(../imagenes/Balistica/Portada\ Armamento.gif);
+    background-size: cover;
+    height: 45%;
+    transition: all 0.7s ease-in-out;
+}
+
+.armamento h2 {
+    text-align: center;
+    letter-spacing: 8px;
+    font-weight: 100;
+}
+
+.armamento:hover {
+    scale: 1.1;
+
+}
+
+.v-navales {
+    background-image: url(../imagenes/Navales/Vehiculos\ Navales.gif);
+    background-size: cover;
+    height: 55%;
+    transition: all 0.7s ease-in-out;
+}
+
+.v-navales:hover {
+    scale: 1.1;
+}
+
+.v-navales h2 {
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: 8px;
+}
+
+.vehiculos-a-t {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 50%;
+    
+}
+
+.v-aereos {
+    background-image: url(../imagenes/Aereos/Portada\ Vehiculos\ Aereos.gif);
+    background-size: cover;
+    width: 65%;
+    transition: all 0.7s ease-in-out;
+}
+
+.v-aereos h2 {
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: 7px;
+}
+
+.v-aereos:hover {
+    scale: 1.1;
+}
+
+.v-terrestres {
+    background-image: url(../imagenes/Terrestres/Portada\ Vehiculos\ Terrestres.gif);
+    background-size: cover;
+    width: 65%;
+    transition: all 0.7s ease-in-out;
+}
+
+.v-terrestres:hover {
+    scale: 1.1;
+}
+
+.v-terrestres h2 {
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: 7px;
+}
+
+
+/*-----------------------------------------------------------FRASES-------------------------------------------------------*/
+/* Centra el contenedor en la mitad libre de tu cielo */
+.bienvenida-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    margin-left: 22.2%;
+    margin-top: 0.5%;
+    max-width: 900px;
+    min-height: 80px; /* Evita que la pantalla parpadee al cambiar de frase */
+}
+
+/* El diseño de tus titulares premium sobre la explosión */
+.frase-carrusel {
+    font-family: sans-serif;
+    font-size: 0.8rem; 
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 8px;
+    font-weight: 100;
+    /* Filtro de sombra característico para que resalte sobre el fondo claro */
+    filter: drop-shadow(3px 2px 1px rgba(0, 0, 0, 1));
+    
+    /* EL AMORTIGUADOR: Le dice al CSS que suavice la opacidad en 0.5 segundos */
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* LA CLASE INVENTADA: El interruptor que JavaScript encenderá y apagará en vivo */
+.frase-oculta {
+    opacity: 0;
+}
+
+/*-----------------------------------------------------------FRASES-------------------------------------------------------*/
+/*---------------------------------------------------REPRODUCTOR-----------------------------------------------------------*/
+/* --- POSICIONAMIENTO DEL REPRODUCTOR TÁCTICO --- */
+.music-widget {
+    position: fixed;            /* Lo clava flotando en la pantalla aunque bajes con el scroll */
+    bottom: 25px;               /* Separación de 25 píxeles desde el borde inferior */
+    right: 25px;                /* Separación de 25 píxeles desde el borde derecho */
+    z-index: 2500;              /* Capa ultra alta para que flote por encima del fondo borroso */
+}
+
+/* --- DISEÑO DEL BOTÓN CIRCULAR (Estilo tus tarjetas) --- */
+.btn-music {
+    width: 55px;                /* Ancho del botón */
+    height: 55px;               /* Alto del botón */
+    border-radius: 50%;         /* ALTO VALOR: Convierte el botón cuadrado en un círculo perfecto */
+    
+    /* ESTÉTICA KERNID: Usamos tu color verde oscuro translúcido y tus líneas discontinuas */
+    background-color: rgba(28, 43, 41, 0.65); 
+    border: 1px dashed rgba(255, 255, 255, 0.4); 
+    
+    color: #ffffff;             /* Color blanco para los emojis */
+    font-size: 1.3rem;          /* Tamaño del emoji de música dentro del círculo */
+    cursor: pointer;            /* Transforma el cursor en la manito (👆) al pasar el mouse */
+    
+    /* FLEXBOX INTERNO: Centra el emoji perfectamente en la mitad del círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Sombra sutil para darle volumen */
+    transition: all 0.2s ease;  /* Suaviza los cambios de animaciones a 0.2 segundos */
+}
+
+/* --- EFECTO VISUAL AL PASAR EL MOUSE (HOVER) --- */
+.btn-music:hover {
+    transform: scale(1.1);      /* El círculo crece un 10% de forma fluida */
+    border-style: solid;        /* Tus líneas discontinuas se vuelven una línea sólida continua */
+    background-color: rgba(28, 43, 41, 0.9); /* El fondo se vuelve más oscuro y denso */
+}
+
+/* --- EL TOQUE DE BRILLO BALÍSTICO (Cuando la música suena) --- */
+.btn-music.activo {
+    border-color: #ffb703;      /* El borde cambia a un amarillo de advertencia/balística */
+    box-shadow: 0 0 15px rgba(255, 183, 3, 0.4); /* Crea un resplandor luminoso amarillo */
+}  
+/*---------------------------------------------------REPRODUCTOR-----------------------------------------------------------*

@@ -1,0 +1,445 @@
+body{
+    background-color: black;
+    color: rgb(255, 255, 255);    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: "Host Grotesk", Helvetica, sans-serif;
+}   
+/*---------------------------------------------------INICIO---------------------------------------------------------------*/
+.menu {
+    flex-direction: row;
+    height: 5.7vw;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    transition: top 0.3s ease-in-out; 
+}
+
+.menu.oculto {
+    top: -100px; /* Empuja la barra 85 píxeles hacia arriba (sacándola del monitor) */
+    
+}
+
+.logo-nombre {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 25%;
+}
+
+.logo {
+    height: clamp(30px, 5.3vw, 85px);
+    width: auto;
+    margin-right: 0;
+    padding-top: 1.5vw;
+    padding-left: 1vw;
+    filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 1));
+}
+
+.nombre {
+    margin: 0;
+    font-size: 3rem;
+    padding-left: 1%;
+    padding-top: 1.3vw;
+    color: rgb(252, 252, 252);
+    filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 1));
+}
+
+.search-box {
+     display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    padding: 6px 14px;
+    
+    /* LA MAGIA EFICIENTE: Le dice al buscador que use el espacio del centro 
+       y que tenga un tamaño máximo controlado en PC para que no se deforme */
+    flex-grow: 1; 
+    max-width: 320px; 
+    transition: all 0.3s ease;
+     position: relative;
+    width: 100%;
+    max-width: 650px;
+    background-color: #f7f8f825;
+    border-radius: 30px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    height: 40%;
+    margin-top: 35px;
+    transition: all 1s ease-in-out;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 15px 25px;
+    background: transparent;
+    border: none; /* Elimina el borde por defecto */
+    outline: none; /* Elimina el borde de enfoque por defecto */
+    font-size: 16px;
+    color: #0c0c0c;
+    border-radius: 30px;
+}
+
+/* Efecto visual al hacer clic en el buscador */
+.search-box:focus-within {
+    box-shadow: 0 4px 20px rgba(0, 123, 255, 0.384);
+}
+
+.search-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 20px rgba(0, 123, 255, 0.384);
+}
+
+.menu-right {
+    display: flex;
+    width: 30%;
+    padding-left: 3%;
+    margin-right: 0;
+    gap: 30px;
+}
+
+.menu-right a {
+    font-size: 1rem;
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 10%;
+    font-weight: 50;
+    transition: all 0.4s ease-in-out;
+    text-decoration-line: none;
+    color: white;
+}
+
+.menu-right a:visited {
+    color: white;
+}
+
+.menu-right a:hover {
+    transform: scale(1.1);
+}
+
+.menu-right {
+    display: flex;
+    width: 30%;
+    padding-left: 3%;
+    margin-right: 0;
+    gap: 30px;
+}
+
+
+.menu-right p:hover {
+    transform: scale(1.1);
+}
+        
+
+
+#portada {
+    background-image: url(../../imagenes/Terrestres/Merkava\ disparando.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    margin-bottom: 0;
+    margin-top: 0;
+  
+    z-index: 10;        /* Pone la portada por encima del bloque negro para que la sombra no se tape */
+
+    /* 👇 LA TRICIÓN: Proyecta el brillo celeste hacia abajo */
+    /* X-offset  Y-offset  Difuminado  Expansión  Color(Celeste blanquecino) */
+    box-shadow: 0px 20px 20px 1px rgba(3, 3, 3, 0.76);
+
+}
+
+h1 {
+    font-size: clamp(2rem, 7vw, 9rem); 
+    font-weight: 200;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 0;
+    background: linear-gradient(59deg, #ffffff 43%, #e6e6e6 48%, #e8feff 59%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.7));
+    
+}
+
+#significado {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 0.05px;
+    font-weight: 100; 
+    background: linear-gradient(59deg, #fbfbfc 40%, #ebfcff 48.5%, #e3f6ff 59%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 1));
+}
+/*---------------------------------------------------INICIO---------------------------------------------------------------*/
+/*------------------------------------------------EXPLICACION-------------------------------------------------------------*/
+.que-son {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    gap: 10px;
+    align-items: flex-start;
+    background-image: url(../../imagenes/Fondos/oscuro.jpg);
+    background-size: cover;
+    height: 55vw;
+}
+
+.caja-lateral {
+    border-style: solid;
+    border-radius: 2%;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    min-height: 40vw;
+    flex: 2;
+    margin-top: 5vw;
+    flex-direction: column;
+    max-width: 15%;
+}
+ 
+.imagen {
+    border-style:double;
+    margin-left: 1.1vw;
+    margin-top: 1vw;
+    margin-right: 0;
+    width: 84%;
+    display: flex;
+}
+
+.efecto-hidrodinamico-L {
+    width: 100%;
+}
+
+.dato h3 {
+    text-align: center;
+    color: #faf8f8;
+}
+
+.dato p {
+    margin-left: 1vw;
+    border-style: solid;
+    border-width: 2px;
+    font-size: 0.9rem;
+    max-width: 80%;
+    text-align: center;
+    color: #fffefe;
+    padding: 7px;
+}
+
+.titulo-informacion {
+    flex: 6;
+    
+    flex-direction: row;
+    display: flex;
+    margin-top: 5vw;
+}
+
+.titulo-resumen {
+    border-style: solid;
+    border-radius: 2%;
+    border-width: 1px;
+    flex: 6;
+    background-image: url(../../imagenes/Balistica/APFSDS\ Leopard.jpg);
+    background-size: cover;
+    height: 40vw;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.titulo-resumen p {
+    border-style: solid;
+    border-width: 1px;
+    font-size: 0.9rem;
+    width: 80%;
+    max-width: 100%;
+    margin-right: 0;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    margin-left: 8%;
+    padding: 2%; 
+    background-color: #05080881;
+     filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 1));
+    
+    
+    
+}
+
+.titulo-resumen h2 {
+     width: 100%;
+    max-width: 100%;
+    margin-left: 20%;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-top: 8%;
+    padding-bottom: 7%;    
+    color: #333;
+     filter: drop-shadow(1px 2px 10px rgba(0, 0, 0, 4));
+}
+
+.informacion {
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.informacion p {
+      /* 1. EL ELÁSTICO: Obliga al texto a ocupar todo el ancho del cuadro blanco */
+    width: 90%;
+    padding-left: 5%;
+    max-width: 100%;
+    /* 2. EL BORRADOR: Quitamos cualquier margen izquierdo o derecho que lo esté empujando */
+    margin-left: 0;
+    margin-right: 0;
+    /* 3. EL FORMATO: Estira las líneas para que llenen de borde a borde como Wikipedia */
+    text-align: center;
+    font-size: 0.91rem; /* El tamaño de letra que tenías */
+
+    filter: drop-shadow(2px 4px 10px rgba(0, 0, 0, 0.7));    
+    color: #dddddd;
+}
+/*---------------------------------------------------EXPLICACION----------------------------------------------------------*/
+/*---------------------------------------------------FABRICACION----------------------------------------------------------*/
+.fabricacion {
+    margin-top: 10vw;
+}
+
+
+
+h2 {
+    display: flex;
+    align-self: flex-start;
+    margin-left: 10vw;
+    font-size: clamp(2rem, 7vw, 3rem);
+    margin-top: 0;
+}
+
+p {
+    font-size: 20px;
+    max-width: 55%;         /* Cambié el 100% por 600px para que no ocupe toda la pantalla de lado a lado */
+    align-self: flex-start;   /* ¡ESTA ES LA CLAVE! Lo saca del centro y lo manda a la izquierda */
+    margin-left: 10vw;         /* Se alinea perfectamente debajo de tus subtítulos h2 */
+    line-height: 1.6;         /* Le da un espacio limpio entre líneas para que se lea mejor */
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+    margin: 40px auto;
+}
+
+.card {
+    background-color: rgba(22, 22, 22, 0.466);
+    border: 1px dashed white;
+    border-radius: 20px;
+    padding: 20px;
+    text-decoration-line: none;
+    transition: all 0.3s ease-in-out;
+    transform-origin: bottom center;
+}
+
+.card h3 {
+    color: oklch(98.065% 0.0266 176.614);
+    font-size: 2.3rem;
+    margin-left: 30px;
+}
+
+.card p {
+    font-size: 17px;
+    max-width: 80%;
+    color: rgb(255, 255, 255);
+    margin-left: 10%;
+}
+
+.card:hover {
+    transform: scale(1.06);
+    background-color: rgba(28, 43, 41, 0.459);
+}
+
+.card:visited {
+    color: rgb(255, 255, 255);
+}
+/*---------------------------------------------------FABRICACION-----------------------------------------------------------*/
+/*-----------------------------------------------------PARTES--------------------------------------------------------------*/
+.list-container{
+    display: flex;
+    align-self: flex-start;
+    margin-left: 10%;   
+    font-size: 1.2rem; 
+    width: 85%;
+    height: 15%;
+
+}
+
+#Partes {
+    height: 7%;
+    margin-left: 50px;
+}
+
+li{
+    margin-bottom: 13px;
+}
+/*---------------------------------------------------REPRODUCTOR-----------------------------------------------------------*/
+/* --- POSICIONAMIENTO DEL REPRODUCTOR TÁCTICO --- */
+.music-widget {
+    position: fixed;            /* Lo clava flotando en la pantalla aunque bajes con el scroll */
+    bottom: 25px;               /* Separación de 25 píxeles desde el borde inferior */
+    right: 25px;                /* Separación de 25 píxeles desde el borde derecho */
+    z-index: 2500;              /* Capa ultra alta para que flote por encima del fondo borroso */
+}
+
+/* --- DISEÑO DEL BOTÓN CIRCULAR (Estilo tus tarjetas) --- */
+.btn-music {
+    width: 55px;                /* Ancho del botón */
+    height: 55px;               /* Alto del botón */
+    border-radius: 50%;         /* ALTO VALOR: Convierte el botón cuadrado en un círculo perfecto */
+    
+    /* ESTÉTICA KERNID: Usamos tu color verde oscuro translúcido y tus líneas discontinuas */
+    background-color: rgba(28, 43, 41, 0.65); 
+    border: 1px dashed rgba(255, 255, 255, 0.4); 
+    
+    color: #ffffff;             /* Color blanco para los emojis */
+    font-size: 1.3rem;          /* Tamaño del emoji de música dentro del círculo */
+    cursor: pointer;            /* Transforma el cursor en la manito (👆) al pasar el mouse */
+    
+    /* FLEXBOX INTERNO: Centra el emoji perfectamente en la mitad del círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Sombra sutil para darle volumen */
+    transition: all 0.2s ease;  /* Suaviza los cambios de animaciones a 0.2 segundos */
+}
+
+/* --- EFECTO VISUAL AL PASAR EL MOUSE (HOVER) --- */
+.btn-music:hover {
+    transform: scale(1.1);      /* El círculo crece un 10% de forma fluida */
+    border-style: solid;        /* Tus líneas discontinuas se vuelven una línea sólida continua */
+    background-color: rgba(28, 43, 41, 0.9); /* El fondo se vuelve más oscuro y denso */
+}
+
+/* --- EL TOQUE DE BRILLO BALÍSTICO (Cuando la música suena) --- */
+.btn-music.activo {
+    border-color: #ffb703;      /* El borde cambia a un amarillo de advertencia/balística */
+    box-shadow: 0 0 15px rgba(255, 183, 3, 0.4); /* Crea un resplandor luminoso amarillo */
+}  
+/*---------------------------------------------------REPRODUCTOR-----------------------------------------------------------*/

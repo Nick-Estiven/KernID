@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/inicio.css">
+</head>
+
+<body>
+    <div id="portada">                                    
+      <nav class="menu">                                 <!--MENU-->
+        <div class="logo-nombre">
+            <img src="imagenes/Globales/Logo.png" alt="KernID" class="logo">
+            <p class="nombre">KernID</p>
+        </div>
+      
+        <form class="search-box">
+               <input type="search"  class="search-bar" placeholder="Buscar temas..." aria-label="Buscar">
+        </form>
+        
+        <div class="menu-right">
+            <a class="inicio" href="inicio.html">Inicio</a>
+            <a class="img-ref" href="">Imagenes de Referencia</a>
+            <a class="quiz" href="">Quiz</a>
+            <a class="iniciar-sesion" href="">Iniciar Sesion</a>
+        </div>
+     </nav>
+
+    <nav class="temas">
+        <div class="armamento-v-navales">
+           <article class="armamento">
+            <h2>Armamento</h2>
+           </article>
+
+           <article class="v-navales">
+            <h2>Vehiculos Navales</h2>
+           </article>
+        </div>
+       
+        <div class="vehiculos-a-t">
+            <article class="v-aereos">
+                <h2>Vehiculos Aereos</h2>
+            </article>
+
+            <article class="v-terrestres">
+                <h2>Vehiculos Terrestres</h2>
+            </article>
+
+        </div>
+    </nav>
+
+     <div class="bienvenida-container">
+        <!-- El id="textoDinamico" es obligatorio para conectar con el script -->
+        <h1 id="textoDinamico" class="frase-carrusel">INVESTIGA BLINDAJES MODERNOS</h1>
+    </div>
+
+    </div>
+
+<div class="music-widget">
+    
+    <!-- EL BOTÓN VISUAL -->
+    <button type="button" id="toggleMusic" class="btn-music">🎵</button>  <!--base invisible-->
+                                                        <!--Texto-->       <!-- class para CSS e id para JS-->
+                                                                           <!--background: transparent;  y  border: none; 
+                                                                           qutan el diseño default del navegador-->
+    
+    <audio id="audioFondo" loop>                                           <!--audio daaaaa-->
+        <source src="audio/iFeel.mp3" type="audio/mpeg">                <!--la musiquita-->
+    </audio>
+
+</div>
+
+
+<script src="global.js"></script>  
+<script src="menu.js"></script>
+<script src="JS/inicio.js"></script>
+</body>
+</html>
