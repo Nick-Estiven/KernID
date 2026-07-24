@@ -174,10 +174,12 @@ body{
 }
 
 .armamento {
-    background-image: url(../imagenes/Balistica/Portada\ Armamento.gif);
+    background-image: url(../imagenes/Armamento/Portada\ Armamento.gif);
     background-size: cover;
     height: 45%;
     transition: all 0.7s ease-in-out;
+    text-decoration: none;
+    
 }
 
 .armamento h2 {
@@ -188,7 +190,10 @@ body{
 
 .armamento:hover {
     scale: 1.1;
+}
 
+.armamento:visited {
+    color: #ffffff;
 }
 
 .v-navales {

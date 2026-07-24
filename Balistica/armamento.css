@@ -1,0 +1,138 @@
+body{
+    background-color: black;
+    color: rgb(255, 255, 255);    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: "Host Grotesk", Helvetica, sans-serif;
+}   
+
+.menu {
+    flex-direction: row;
+    height: 5.7vw;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    transition: top 0.3s ease-in-out; 
+}
+
+.menu.oculto {
+    top: -100px; /* Empuja la barra 85 píxeles hacia arriba (sacándola del monitor) */
+    
+}
+
+.logo-nombre {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 25%;
+}
+
+.logo {
+    height: clamp(30px, 5.3vw, 85px);
+    width: auto;
+    margin-right: 0;
+    padding-top: 1.5vw;
+    padding-left: 1vw;
+    filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 1));
+}
+
+.nombre {
+    margin: 0;
+    font-size: 3rem;
+    padding-left: 1%;
+    padding-top: 1.3vw;
+    color: rgb(252, 252, 252);
+    filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 1));
+}
+
+.search-box {
+     display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    padding: 6px 14px;
+    
+    /* LA MAGIA EFICIENTE: Le dice al buscador que use el espacio del centro 
+       y que tenga un tamaño máximo controlado en PC para que no se deforme */
+    flex-grow: 1; 
+    max-width: 320px; 
+    transition: all 0.3s ease;
+     position: relative;
+    width: 100%;
+    max-width: 650px;
+    background-color: #f7f8f825;
+    border-radius: 30px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    height: 40%;
+    margin-top: 35px;
+    transition: all 1s ease-in-out;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 15px 25px;
+    background: transparent;
+    border: none; /* Elimina el borde por defecto */
+    outline: none; /* Elimina el borde de enfoque por defecto */
+    font-size: 16px;
+    color: #0c0c0c;
+    border-radius: 30px;
+}
+
+/* Efecto visual al hacer clic en el buscador */
+.search-box:focus-within {
+    box-shadow: 0 4px 20px rgba(0, 123, 255, 0.384);
+}
+
+.search-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 20px rgba(0, 123, 255, 0.384);
+}
+
+.menu-right {
+    display: flex;
+    width: 30%;
+    padding-left: 3%;
+    margin-right: 0;
+    gap: 30px;
+}
+
+.menu-right a {
+    font-size: 1rem;
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 10%;
+    font-weight: 50;
+    transition: all 0.4s ease-in-out;
+    text-decoration-line: none;
+    color: white;
+}
+
+.menu-right a:visited {
+    color: white;
+}
+
+.menu-right a:hover {
+    transform: scale(1.1);
+}
+
+.menu-right {
+    display: flex;
+    width: 30%;
+    padding-left: 3%;
+    margin-right: 0;
+    gap: 30px;
+}
+
+
+.menu-right p:hover {
+    transform: scale(1.1);
+}

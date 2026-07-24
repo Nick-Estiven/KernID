@@ -32,7 +32,7 @@ function cambiarFrase() {
 }
 
 // 3. EL TEMPORIZADOR AUTOMÁTICO DE FÁBRICA: Ejecuta la función cada 5 segundos (5000ms)
-setInterval(cambiarFrase, 4000);
+setInterval(cambiarFrase, 3400);
 
 
     
