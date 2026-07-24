@@ -1,3 +1,4 @@
+
 body{
     background-color: black;
     color: rgb(255, 255, 255);    
@@ -6,7 +7,7 @@ body{
     justify-content: center;
     min-height: 100vh;
     margin: 0;
-    font-family: "Host Grotesk", Helvetica, sans-serif;
+    font-family: "Exo 2", Helvetica, sans-serif;
 }   
 
 .menu {
@@ -36,7 +37,7 @@ body{
     height: clamp(30px, 5.3vw, 85px);
     width: auto;
     margin-right: 0;
-    padding-top: 1.5vw;
+    padding-top: 1vw;
     padding-left: 1vw;
     filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 1));
 }
@@ -48,6 +49,7 @@ body{
     padding-top: 1.3vw;
     color: rgb(252, 252, 252);
     filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 1));
+    font-weight: 100;
 }
 
 .search-box {
@@ -65,7 +67,7 @@ body{
     transition: all 0.3s ease;
      position: relative;
     width: 100%;
-    max-width: 650px;
+    max-width: 500px;
     background-color: #f7f8f825;
     border-radius: 30px; /* Bordes redondeados */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -73,7 +75,7 @@ body{
     align-items: center;
     height: 40%;
     margin-top: 35px;
-    transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out
 }
 
 .search-bar {
@@ -83,7 +85,7 @@ body{
     border: none; /* Elimina el borde por defecto */
     outline: none; /* Elimina el borde de enfoque por defecto */
     font-size: 16px;
-    color: #0c0c0c;
+    color: #faf7f7;
     border-radius: 30px;
 }
 
@@ -99,21 +101,22 @@ body{
 
 .menu-right {
     display: flex;
-    width: 30%;
+    width: 40%;
     padding-left: 3%;
     margin-right: 0;
-    gap: 30px;
+    gap: 30px
 }
 
 .menu-right a {
     font-size: 1rem;
     margin-right: 0;
     margin-left: 0;
-    padding-top: 10%;
-    font-weight: 50;
+    padding-top: 7.9%;
     transition: all 0.4s ease-in-out;
     text-decoration-line: none;
     color: white;
+    letter-spacing: 3px;
+    font-weight: 100;
 }
 
 .menu-right a:visited {
@@ -123,15 +126,6 @@ body{
 .menu-right a:hover {
     transform: scale(1.1);
 }
-
-.menu-right {
-    display: flex;
-    width: 30%;
-    padding-left: 3%;
-    margin-right: 0;
-    gap: 30px;
-}
-
 
 .menu-right p:hover {
     transform: scale(1.1);
@@ -157,7 +151,7 @@ body{
 .temas {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 10px;
     margin-top: 7%;
     margin-bottom: 0;
     width: 100%;
@@ -186,6 +180,8 @@ body{
     text-align: center;
     letter-spacing: 8px;
     font-weight: 100;
+    color: #ffffff;
+    text-shadow: 2px 2px 1px #000;
 }
 
 .armamento:hover {
@@ -211,12 +207,13 @@ body{
     text-align: center;
     font-weight: 100;
     letter-spacing: 8px;
+    text-shadow: 2px 2px 1px #000;
 }
 
 .vehiculos-a-t {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 10px;
     width: 50%;
     
 }
@@ -232,6 +229,7 @@ body{
     text-align: center;
     font-weight: 100;
     letter-spacing: 7px;
+    text-shadow: 2px 2px 1px #000;
 }
 
 .v-aereos:hover {
@@ -253,6 +251,7 @@ body{
     text-align: center;
     font-weight: 100;
     letter-spacing: 7px;
+    text-shadow: 2px 2px 1px #000;
 }
 
 
