@@ -133,7 +133,7 @@ body{
 .temas-armamento {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 70px;
     margin-top: 7%;
     margin-bottom: 0;
     width: 100%;
@@ -143,11 +143,29 @@ body{
     gap: 20px;
 }
 
+.texto-lateral {
+    display: flex;
+    flex-direction: row;
+}
+
+.texto-l {
+    display: flex;
+    flex-direction: column;
+    margin-top: 7%;
+    margin-left: 5.5%;
+    margin-right: 5.5%;
+    color: #ffffff38;
+}
+
+.text {
+    font-weight: 100;
+}
+
 .misiles-bombas {
     display: flex;
     flex-direction: column;
     height: 100%;
-    gap: 30px;
+    gap: 40px;
 }
 
 .misiles {
@@ -156,6 +174,8 @@ body{
     height: 18vw;
     width: 35vw;
     margin-top: 0;
+    transition: all 0.7s ease-in-out;
+    margin-right: 40px;
 }
 
 .misiles h2 {
@@ -166,12 +186,18 @@ body{
     text-shadow: 2px 2px 1px #000;
 }
 
+.misiles:hover {
+    scale: 1.1;
+    box-shadow: 0 4px 100px rgba(248, 249, 250, 0.123);
+}
+
 .bombas {
     background-image: url(../imagenes/Armamento/Bombas/Bomba\ del\ Tzar.gif);
     background-size: cover;
     height: 18vw;
     width: 35vw;
     margin-top: 0;
+    transition: all 0.7s ease-in-out;
 }
 
 .bombas h2 {
@@ -182,11 +208,16 @@ body{
     text-shadow: 2px 2px 1px #000;
 }
 
+.bombas:hover {
+    scale: 1.1;
+    box-shadow: 0 4px 100px rgba(248, 249, 250, 0.123);
+}
+
 .cohetes-proyectiles{
     display: flex;
     flex-direction: column;
     height: 100%;
-    gap: 30px;
+    gap: 40px;
 }
 
 .cohetes {
@@ -194,6 +225,7 @@ body{
     background-size: cover;
     width: 35vw;
     height: 18vw;
+    transition: all 0.7s ease-in-out;
 }
 
 .cohetes h2 {
@@ -204,12 +236,18 @@ body{
     text-shadow: 2px 2px 1px #000;
 }
 
+.cohetes:hover {
+    scale: 1.1;
+    box-shadow: 0 4px 100px rgba(248, 249, 250, 0.123);
+}
+
 .proyectiles {
     background-image: url(../imagenes/Armamento/Proyectiles/Proyectiles-portada.gif);
     background-size: cover;
     width: 35vw;
     height: 18vw;
     max-height: 18vw;
+    transition: all 0.7s ease-in-out;
 }
 
 .proyectiles h2 {
@@ -218,4 +256,25 @@ body{
     font-weight: 100;
     color: #ffffff;
     text-shadow: 2px 2px 1px #000;
+}
+
+.proyectiles:hover {
+    scale: 1.1;
+    box-shadow: 0 4px 100px rgba(248, 249, 250, 0.123);
+}
+
+.texto-copyrigth {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 5%;
+    align-items: end;
+    margin-top: 1.5%;
+}
+
+.copy {
+    margin-bottom: 2%;
+    color: #ffffff4b;
+    letter-spacing: 3px;
+    font-weight: 100;
 }
