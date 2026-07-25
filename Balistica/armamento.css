@@ -174,8 +174,10 @@ body{
 
 .cohetes {
     background-image: url(../Balistica/Cohetes/Cohete.gif);
+    background-size: cover;
 }
 
 .proyectiles {
-    
+    background-image: url(../imagenes/Armamento/Proyectiles.gif);
+    background-size: cover;
 }
