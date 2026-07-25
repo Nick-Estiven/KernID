@@ -139,6 +139,7 @@ body{
     width: 100%;
     max-width: 100%;
     height: 80%;
+    max-height: 80%;
     gap: 20px;
 }
 
@@ -150,19 +151,35 @@ body{
 }
 
 .misiles {
-    background-image: url(../Balistica/Misiles/V2.gif);
+    background-image: url(../imagenes/Armamento/Misiles/V2.gif);
     background-size: cover;
     height: 18vw;
     width: 35vw;
     margin-top: 0;
 }
 
+.misiles h2 {
+    text-align: center;
+    letter-spacing: 8px;
+    font-weight: 100;
+    color: #ffffff;
+    text-shadow: 2px 2px 1px #000;
+}
+
 .bombas {
-    background-image: url(../Balistica/Bombas/Bomba\ del\ Tzar.gif);
+    background-image: url(../imagenes/Armamento/Bombas/Bomba\ del\ Tzar.gif);
     background-size: cover;
     height: 18vw;
     width: 35vw;
     margin-top: 0;
+}
+
+.bombas h2 {
+    text-align: center;
+    letter-spacing: 8px;
+    font-weight: 100;
+    color: #ffffff;
+    text-shadow: 2px 2px 1px #000;
 }
 
 .cohetes-proyectiles{
@@ -173,11 +190,32 @@ body{
 }
 
 .cohetes {
-    background-image: url(../Balistica/Cohetes/Cohete.gif);
+    background-image: url(../imagenes/Armamento/Cohetes/Cohete-portada.gif);
     background-size: cover;
+    width: 35vw;
+    height: 18vw;
+}
+
+.cohetes h2 {
+    text-align: center;
+    letter-spacing: 8px;
+    font-weight: 100;
+    color: #ffffff;
+    text-shadow: 2px 2px 1px #000;
 }
 
 .proyectiles {
-    background-image: url(../imagenes/Armamento/Proyectiles.gif);
+    background-image: url(../imagenes/Armamento/Proyectiles/Proyectiles-portada.gif);
     background-size: cover;
+    width: 35vw;
+    height: 18vw;
+    max-height: 18vw;
+}
+
+.proyectiles h2 {
+    text-align: center;
+    letter-spacing: 8px;
+    font-weight: 100;
+    color: #ffffff;
+    text-shadow: 2px 2px 1px #000;
 }
