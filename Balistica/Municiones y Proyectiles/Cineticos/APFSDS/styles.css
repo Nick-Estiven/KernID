@@ -132,7 +132,7 @@ body{
 }
         
 #portada {
-    background-image: url(../../../imagenes/Terrestres/Merkava\ disparando.jpg);
+    background-image: url(../../../../imagenes/Terrestres/Merkava\ disparando.jpg);
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -184,7 +184,7 @@ h1 {
     width: 100vw;
     gap: 10px;
     align-items: flex-start;
-    background-image: url(../../../imagenes/Fondos/oscuro.jpg);
+    background-image: url(../../../../imagenes/Fondos/oscuro.jpg);
     background-size: cover;
     height: 55vw;
 }
@@ -243,7 +243,7 @@ h1 {
     border-radius: 2%;
     border-width: 1px;
     flex: 6;
-    background-image: url("../../../imagenes/Armamento/Proyectiles/Cineticos/APFSDS-Leopard.jpg");
+    background-image: url("../../../../imagenes/Armamento/Proyectiles/Cineticos/APFSDS-Leopard.jpg");
     background-size: cover;
     height: 40vw;
     display: flex;

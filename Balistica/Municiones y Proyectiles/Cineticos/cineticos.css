@@ -1,5 +1,6 @@
 body{
-    background-color: black;
+    background-image: url(../../../imagenes/Fondos/Fondo-cineticos.jpg);
+    background-size: cover;
     color: rgb(255, 255, 255);    
     display: flex;
     flex-direction: column;
@@ -131,7 +132,7 @@ body{
 }
 
 #portada {
-    background-image: url(../../../imagenes/Armamento/Proyectiles/Cineticos/AP.png);
+    background-image: url(../../../imagenes/Armamento/Proyectiles/Cineticos/AP-sherman-slow.png);
     background-color: rgba(0, 0, 0, 0.37);
     width: 100%;
     height: 100%;
@@ -200,3 +201,247 @@ body{
     font-weight: 300;
     margin-top: 0;
 }
+
+.subtitulo-1 {
+    display: flex;
+    justify-content:center;
+}
+
+.seccion-1 {
+    background-image: url(../../../imagenes/Fondos/Fondo-cineticos.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+.calibre-completo {
+   
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.lista-l {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    gap: 30px;
+    margin-left: 5%;
+    height: 80%;
+
+}
+
+
+.ap-card {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 1px;
+    height: 47.4%;
+}
+
+.ap-img-stats {
+    width: 100%;
+    height: 85%;
+    border-style: solid;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.ap-img {
+    display: flex;
+    height: 90%;
+    margin-left: 8%;
+    transform: rotate(-1.3deg);
+    margin-top: 2%;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.stats p {
+    display: flex;
+    margin: 0;
+}
+
+.ap-sigla {
+    height: 12.2%;
+    border-style: solid;
+    border-width: 1px;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 100;
+    padding-left: 11%;
+}
+
+.apc-card {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 1px;
+    height: 50%;
+}
+
+.apc-img {
+    background-image: url(../../../imagenes/Armamento/Proyectiles/Cineticos/APC.png);
+    background-size: cover;
+    width: 13%;
+    height: 90%;
+    margin-left: 6.5%;
+    margin-bottom: 3%;
+    margin-top: 2%;
+}  
+
+.apc-card h2 {
+    margin: 0;
+    padding-left: 8.5%;
+    border-style: solid;
+    border-width: 1px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    padding-bottom: 1%;
+}
+
+.lista-r {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    gap: 30px;
+    height: 80%;
+}
+
+.apcbc-card {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 1px;
+    height: 50%;
+}
+
+.apcbc-img {
+    background-image: url(../../../imagenes/Armamento/Proyectiles/Cineticos/APCBC.png);
+    background-size: cover;
+    width: 9.5%;
+    height: 90%;
+    margin-left: 7%;
+    margin-bottom: 4%;
+    margin-top: 2%;
+}
+
+.apcbc-card h2 {
+    margin: 0;
+    padding-left: 4.5%;
+    border-style: solid;
+    border-width: 1px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    padding-bottom: 1%;
+}
+
+.apbc-card {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 1px;
+    height: 50%;
+}
+
+.apbc-img {
+    background-image: url(../../../imagenes/Armamento/Proyectiles/Cineticos/APBC.png);
+    background-size: cover;
+    width: 12.2%;
+    height: 100%;
+    margin-bottom: 4%;
+    margin-top: 2%;
+    margin-left: 5.5%;
+}
+
+
+.apbc-card h2 {
+    margin: 0;
+    padding-left: 5.5%;
+    border-style: solid;
+    border-width: 1px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    padding-bottom: 1%;
+}
+
+.con-explosivo {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    border-style: solid;
+    margin-right: 5%;
+}
+
+.portada {
+    width: 90%;
+    height: 30%;
+
+}
+
+.subcalibrados {
+    background-image: url(../../../imagenes/Fondos/Fondo-cineticos.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/*---------------------------------------------------REPRODUCTOR-----------------------------------------------------------*/
+/* --- POSICIONAMIENTO DEL REPRODUCTOR TÁCTICO --- */
+.music-widget {
+    position: fixed;            /* Lo clava flotando en la pantalla aunque bajes con el scroll */
+    bottom: 25px;               /* Separación de 25 píxeles desde el borde inferior */
+    right: 25px;                /* Separación de 25 píxeles desde el borde derecho */
+    z-index: 2500;              /* Capa ultra alta para que flote por encima del fondo borroso */
+}
+
+/* --- DISEÑO DEL BOTÓN CIRCULAR (Estilo tus tarjetas) --- */
+.btn-music {
+    width: 55px;                /* Ancho del botón */
+    height: 55px;               /* Alto del botón */
+    border-radius: 50%;         /* ALTO VALOR: Convierte el botón cuadrado en un círculo perfecto */
+    
+    /* ESTÉTICA KERNID: Usamos tu color verde oscuro translúcido y tus líneas discontinuas */
+    background-color: rgba(28, 43, 41, 0.65); 
+    border: 1px dashed rgba(255, 255, 255, 0.4); 
+    
+    color: #ffffff;             /* Color blanco para los emojis */
+    font-size: 1.3rem;          /* Tamaño del emoji de música dentro del círculo */
+    cursor: pointer;            /* Transforma el cursor en la manito (👆) al pasar el mouse */
+    
+    /* FLEXBOX INTERNO: Centra el emoji perfectamente en la mitad del círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Sombra sutil para darle volumen */
+    transition: all 0.5s ease;  /* Suaviza los cambios de animaciones a 0.2 segundos */
+}
+
+/* --- EFECTO VISUAL AL PASAR EL MOUSE (HOVER) --- */
+.btn-music:hover {
+    transform: scale(1.1);      /* El círculo crece un 10% de forma fluida */
+    border-style: solid;        /* Tus líneas discontinuas se vuelven una línea sólida continua */
+    background-color: rgba(28, 43, 41, 0.9); /* El fondo se vuelve más oscuro y denso */
+}
+
+/* --- EL TOQUE DE BRILLO BALÍSTICO (Cuando la música suena) --- */
+.btn-music.activo {
+    border-color: #ffb703;      /* El borde cambia a un amarillo de advertencia/balística */
+    box-shadow: 0 0 15px rgba(255, 183, 3, 0.4); /* Crea un resplandor luminoso amarillo */
+}  
+/*---------------------------------------------------REPRODUCTOR-----------------------------------------------------------*

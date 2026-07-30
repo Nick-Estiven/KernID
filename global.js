@@ -43,7 +43,7 @@ window.addEventListener('scroll', () => {
     let posicionActualScroll = window.scrollY; 
 
     // 4. LA CONDICIÓN LÓGICA (El sistema de decisiones)
-    if (posicionActualScroll > ultimaPosicionScroll && posicionActualScroll > 250) {
+    if (posicionActualScroll > ultimaPosicionScroll && posicionActualScroll > 150) {
         
         // SI la posición actual es mayor (Significa que vas hacia ABAJO)
         // Y ya pasaste los 150px de la portada ➡️ INYECTA LA CLASE INVENTADA
