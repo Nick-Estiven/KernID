@@ -508,6 +508,35 @@ body{
     display: flex;
     border-style: solid;
     height: 100%;
+    margin: 0;
+}
+
+.hibridos-video-titulo {
+    display: flex;
+    border-style: solid;
+    height: 100%;
+    margin: 0;
+}
+
+.defectuosos-video-titulo {
+    display: flex;
+    border-style: solid;
+    height: 100%;
+    margin: 0;
+}
+
+.prototipos-video-titulo {
+    display: flex;
+    border-style: solid;
+    height: 100%;
+    margin: 0;
+}
+
+.porta-contenedores-video-titulo {
+    display: flex;
+    border-style: solid;
+    height: 100%;
+    margin: 0;
 }
 
 .subcalibrados {
