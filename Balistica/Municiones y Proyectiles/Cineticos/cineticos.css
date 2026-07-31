@@ -225,12 +225,13 @@ body{
     display: flex;
     flex-direction: row;
     gap: 20px;
+    
 }
 
 .lista-l {
     display: flex;
     flex-direction: column;
-    width: 33%;
+    width: 45%;
     gap: 30px;
     margin-left: 5%;
     height: 80%;
@@ -243,7 +244,7 @@ body{
     flex-direction: column;
     border-style: solid;
     border-width: 1px;
-    height: 47.4%;
+    height: 47%;
 }
 
 .ap-img-stats {
@@ -273,14 +274,14 @@ body{
 .ap-referencia {
     font-size: 0.8rem !important;
     color: #ffffff93;
-    margin-left: 18% !important;
+    margin-left: 25% !important;
 }
 
 .ap-stats {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 .ap-stats p {
@@ -297,7 +298,7 @@ body{
     margin: 0;
     font-size: 1.5rem;
     font-weight: 100;
-    padding-left: 12.5%;
+    padding-left: 11.5%;
     margin-top: 1.5%;
 }
 
@@ -306,7 +307,7 @@ body{
     flex-direction: column;
     border-style: solid;
     border-width: 1px;
-    height: 47.4%;
+    height: 47%;
 }
 
 .apc-img-stats {
@@ -335,14 +336,14 @@ body{
 .apc-referencia {
     font-size: 0.8rem !important;
     color: #ffffff93;
-    margin-left: 18% !important;
+    margin-left: 25% !important;
 }
 
 .apc-stats {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 .apc-stats p {
@@ -359,14 +360,14 @@ body{
     margin: 0;
     font-size: 1.5rem;
     font-weight: 100;
-    padding-left: 11%;
+    padding-left: 10%;
     margin-top: 1.5%;
 }
 
 .lista-r {
     display: flex;
     flex-direction: column;
-    width: 33%;
+    width: 45%;
     gap: 30px;
     height: 80%;
 }
@@ -376,7 +377,7 @@ body{
     flex-direction: column;
     border-style: solid;
     border-width: 1px;
-    height: 47.4%;
+    height: 47%;
 }
 
 .apcbc-img-stats {
@@ -391,7 +392,7 @@ body{
 .apcbc-img {
     display: flex;
     height: 90%;
-    margin-left: 8%;
+    margin-left: 9%;
     margin-top: 2%;
     transition: all 0.7s ease-in-out;
 
@@ -405,14 +406,14 @@ body{
 .apcbc-referencia {
     font-size: 0.8rem !important;
     color: #ffffff93;
-    margin-left: 18% !important;
+    margin-left: 25% !important;
 }
 
 .apcbc-stats {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 .apcbc-stats p {
@@ -429,7 +430,7 @@ body{
     margin: 0;
     font-size: 1.5rem;
     font-weight: 100;
-    padding-left: 11%;
+    padding-left: 7.5%;
     margin-top: 1.5%;
 }
 
@@ -438,7 +439,7 @@ body{
     flex-direction: column;
     border-style: solid;
     border-width: 1px;
-    height: 47.4%;
+    height: 47%;
 }
 
 .apbc-img-stats {
@@ -467,14 +468,14 @@ body{
 .apbc-referencia {
     font-size: 0.8rem !important;
     color: #ffffff93;
-    margin-left: 18% !important;
+    margin-left: 25% !important;
 }
 
 .apbc-stats {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 .apbc-stats p {
@@ -491,22 +492,10 @@ body{
     margin: 0;
     font-size: 1.5rem;
     font-weight: 100;
-    padding-left: 11%;
+    padding-left: 8.5%;
     margin-top: 1.5%;
 }
 
-.con-explosivo {
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    border-style: solid;
-}
-
-.portada {
-    width: 90%;
-    height: 30%;
-
-}
 
 .subcalibrados {
     background-image: url(../../../imagenes/Fondos/Fondo-cineticos.jpg);
