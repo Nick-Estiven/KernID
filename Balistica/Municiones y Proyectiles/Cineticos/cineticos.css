@@ -496,6 +496,19 @@ body{
     margin-top: 1.5%;
 }
 
+.mas-temas {
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    width: 100%;
+    height: 20%;
+}
+
+.explosivos-video-titulo {
+    display: flex;
+    border-style: solid;
+    height: 100%;
+}
 
 .subcalibrados {
     background-image: url(../../../imagenes/Fondos/Fondo-cineticos.jpg);
