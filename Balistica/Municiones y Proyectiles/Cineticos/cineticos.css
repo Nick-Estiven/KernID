@@ -549,11 +549,23 @@ body{
 
 .defectuosos-video-titulo {
     display: flex;
+    position: relative;
     border-style: solid;
     border-width: 2px;
     height: 90%;
     margin: 0;
 }
+
+.defectuosos-titulo {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    justify-content: center;
+    color: black;
+    font-weight: 300;
+    width: 100%;
+    filter: drop-shadow(1px 2px 3px rgb(247, 247, 247));
+}   
 
 .prototipos-video-titulo {
     display: flex;
