@@ -231,7 +231,7 @@ body{
 .lista-l {
     display: flex;
     flex-direction: column;
-    width: 35%;
+    width: 37%;
     gap: 30px;
     margin-left: 5%;
     height: 80%;
@@ -274,7 +274,7 @@ body{
 .ap-referencia {
     font-size: 0.8rem !important;
     color: #ffffff93;
-    margin-left: 25% !important;
+    margin-left: 17% !important;
 }
 
 .ap-stats {
@@ -336,7 +336,7 @@ body{
 .apc-referencia {
     font-size: 0.8rem !important;
     color: #ffffff93;
-    margin-left: 25% !important;
+    margin-left: 17% !important;
 }
 
 .apc-stats {
@@ -367,7 +367,7 @@ body{
 .lista-r {
     display: flex;
     flex-direction: column;
-    width: 35%;
+    width: 37%;
     gap: 30px;
     height: 80%;
 }
@@ -406,7 +406,7 @@ body{
 .apcbc-referencia {
     font-size: 0.8rem !important;
     color: #ffffff93;
-    margin-left: 25% !important;
+    margin-left: 17% !important;
 }
 
 .apcbc-stats {
@@ -468,7 +468,7 @@ body{
 .apbc-referencia {
     font-size: 0.8rem !important;
     color: #ffffff93;
-    margin-left: 25% !important;
+    margin-left: 17% !important;
 }
 
 .apbc-stats {
