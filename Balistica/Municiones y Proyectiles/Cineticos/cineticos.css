@@ -501,7 +501,7 @@ body{
     flex-direction: column;
     width: 15%;
     height: 20%;
-    gap: 5px;
+    gap: 17.5px;
 
 }
 
@@ -509,7 +509,8 @@ body{
     display: flex;
     border-style: solid;
     border-width: 2px;
-    height: 50%;
+    height: 70%;
+    width: 87.5%;
     margin: 0;
     position: relative;
 
@@ -531,7 +532,8 @@ body{
     position: relative;
     border-style: solid;
     border-width: 2px;
-    height: 90%;
+    height: 70%;
+    width: 87.5%;
     margin: 0;
 }
 
@@ -546,12 +548,18 @@ body{
     filter: drop-shadow(1px 2px 3px rgb(247, 247, 247));
 }   
 
+.hibridos-videos {
+    display: flex;
+    width: 100%;
+}
+
 .defectuosos-video-titulo {
     display: flex;
     position: relative;
     border-style: solid;
     border-width: 2px;
-    height: 90%;
+    height: 70%;
+    width: 87.5%;
     margin: 0;
 }
 
@@ -566,12 +574,18 @@ body{
     filter: drop-shadow(1px 2px 3px rgb(247, 247, 247));
 }   
 
+.defectuosos-videos {
+    display: flex;
+    width: 100%;
+}
+
 .prototipos-video-titulo {
     display: flex;
     position: relative;
     border-style: solid;
     border-width: 2px;
-    height: 90%;
+    height: 70%;
+    width: 87.5%;
     margin: 0;
 }
 
@@ -586,11 +600,17 @@ body{
     filter: drop-shadow(1px 2px 3px rgb(247, 247, 247));
 }   
 
+.prototipos-videos {
+    display: flex;
+    width: 100%;
+}
+
 .porta-contenedores-video-titulo {
     display: flex;
     border-style: solid;
     border-width: 2px;
-    height: 90%;
+    height: 70%;
+    width: 87.5%;
     margin: 0;
 }
 
