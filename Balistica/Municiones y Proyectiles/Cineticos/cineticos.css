@@ -137,7 +137,7 @@ body{
     text-decoration-line: none;
     color: white;
     letter-spacing: 3px;
-    font-weight: 200;
+    font-weight: 300;
     height: 30%;
     padding: 7px;
     margin-top: 2%;
@@ -175,7 +175,7 @@ body{
     display: flex;
     color: #0b0b0e !important;
     background-color: white;
-    font-weight: 300 !important;
+    font-weight: 500 !important;
     gap: 10px;
 }
 
