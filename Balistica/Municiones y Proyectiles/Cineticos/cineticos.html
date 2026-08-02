@@ -8,27 +8,44 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="cineticos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body>
     <div id="portada">                                    
-      <nav class="menu">                                 <!--MENU-->
+      <nav class="menu"> <!-------------------------------------------------MENU---------------------------------------------------------------------->
         <div class="logo-nombre">
             <img src="../../../imagenes/Globales/Logo.png" alt="KernID" class="logo">
-            <p class="nombre">KernID</p>
+          <div class="nombre-descripcion">  
+            <p class="nombre">Kern!D</p>
+            <h4 class="descripcion">Enciclopedia Militar :D</h4>
+          </div>  
         </div>
       
         <form class="search-box">
                <input type="search"  class="search-bar" placeholder="Buscar temas..." aria-label="Buscar">
+                <div class="lupa">
+                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                   <circle cx="11" cy="11" r="8"></circle>
+                   <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                 </svg>
+                 </div>
         </form>
         
         <div class="menu-right">
             <a class="inicio" href="../../../inicio.html">Inicio</a>
-            <a class="img-ref" href="">Imágenes de Referencia</a>
-            <a class="quiz" href="">Quiz</a>
-            <a class="iniciar-sesion" href="">Iniciar Sesión</a>
+            <a class="img-ref" href="">
+              <span class="material-symbols-outlined">photo</span>Imágenes de Referencia
+            </a>
+            <a class="quiz" href="">
+            <span class="material-symbols-outlined">acute</span>Quiz
+            </a>
+            <a class="iniciar-sesion" href=""><span class="material-symbols-outlined icon-sesion">diversity_4</span>Iniciar Sesión
+
+            </a>
         </div>  
      </nav>
+<!----------------------------------------------------------------------------MENU---------------------------------------------------------------------->
 
      <div class="cineticos">
         <div class="cineticos-img">

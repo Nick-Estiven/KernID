@@ -1,5 +1,5 @@
 body{
-    background-image: url(../../../imagenes/Fondos/Fondo-cineticos.jpg);
+    background-color: #0b0b0e;
     background-size: cover;
     color: rgb(255, 255, 255);    
     display: flex;
@@ -12,13 +12,18 @@ body{
 
 .menu {
     flex-direction: row;
-    height: 5.7vw;
+    height: 4.7vw;
     max-width: 100%;
     width: 100%;
     display: flex;
     position: fixed;
     top: 0px;
-    transition: top 0.3s ease-in-out; 
+    transition: top 0.7s ease-in-out; 
+    background-color: #0b0b0e;
+    border-style: solid;
+    border-top: #ffffff;
+    border-left: #0b0b0e;
+    border-width: 1px;
 }
 
 .menu.oculto {
@@ -30,52 +35,68 @@ body{
     display: flex;
     align-items: center;
     gap: 12px;
-    width: 25%;
+    width: 20%;
 }
 
 .logo {
-    height: clamp(30px, 5.3vw, 85px);
+    height: clamp(15px, 2.3vw, 85px);
     width: auto;
     margin-right: 0;
-    padding-top: 1vw;
-    padding-left: 1vw;
+    padding-left: 15%;
     filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 1));
+}
+
+.nombre-descripcion {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
 }
 
 .nombre {
     margin: 0;
-    font-size: 3rem;
-    padding-left: 1%;
-    padding-top: 1.3vw;
+    font-size: 2rem;
+    padding-left: 4%;
     color: rgb(252, 252, 252);
     filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 1));
+    font-weight: 200;
+}
+
+.descripcion {
+    display: flex;
+    margin: 0;
     font-weight: 100;
+    padding-left: 4%;
+    width: 100%;
+
 }
 
 .search-box {
-     display: flex;
-    align-items: center;
+    display: flex;
     background: rgba(255, 255, 255, 0.12);
     border: 1px solid rgba(255, 255, 255, 0.25);
-    border-radius: 20px;
     padding: 6px 14px;
-    
     /* LA MAGIA EFICIENTE: Le dice al buscador que use el espacio del centro 
        y que tenga un tamaño máximo controlado en PC para que no se deforme */
     flex-grow: 1; 
     max-width: 320px; 
     transition: all 0.3s ease;
      position: relative;
-    width: 100%;
-    max-width: 500px;
+    width: 90%;
+    max-width: 20%;
     background-color: #f7f8f81e;
     border-radius: 30px; /* Bordes redondeados */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    display: flex;
     align-items: center;
-    height: 40%;
-    margin-top: 35px;
-    transition: all 1s ease-in-out
+    height: 30%;
+    margin-top: 18px;
+    transition: all 1s ease-in-out;
+}
+
+.lupa {
+    display: flex;
+    position: absolute;
+    color: #797979;
 }
 
 .search-bar {
@@ -101,22 +122,25 @@ body{
 
 .menu-right {
     display: flex;
-    width: 40%;
-    padding-left: 3%;
+    width: 58%;
+    padding-left: 1%;
+    padding-right: 0;
     margin-right: 0;
-    gap: 30px
+    gap: 35px;
 }
 
 .menu-right a {
     font-size: 1rem;
     margin-right: 0;
-    margin-left: 0;
-    padding-top: 7.9%;
+    margin-left: 3%;
     transition: all 0.4s ease-in-out;
     text-decoration-line: none;
     color: white;
     letter-spacing: 3px;
-    font-weight: 100;
+    font-weight: 200;
+    height: 30%;
+    padding: 7px;
+    margin-top: 2%;
 }
 
 .menu-right a:visited {
@@ -129,6 +153,40 @@ body{
 
 .menu-right p:hover {
     transform: scale(1.1);
+}
+
+.img-ref {
+    display: flex;
+    gap: 10px;
+    width: 32%;
+}
+
+.quiz {
+    display: flex;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c4c4c4;
+    background-color: #161616;
+    color: #ffffff;
+    gap: 10px;
+}
+
+.iniciar-sesion {
+    display: flex;
+    color: #0b0b0e !important;
+    background-color: white;
+    font-weight: 300 !important;
+    gap: 10px;
+}
+
+.icon-sesion {
+    color: #0b0b0e !important;
+}
+
+.material-symbols-outlined {
+    display: flex;
+    color: #939393;
+
 }
 
 #portada {
