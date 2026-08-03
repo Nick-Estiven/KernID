@@ -26,36 +26,28 @@ miBoton.addEventListener(`click`, () => {
     }
 });
 
-/* ==========================================================================
-   KERNID - CEREBRO DETECTOR DE SCROLL (MÉTODO REUTILIZABLE)
-   ========================================================================== */
-// 1. EL ALMACÉN: Guarda en la memoria RAM la última posición del mouse (Eje Y)
-let ultimaPosicionScroll = window.scrollY; 
+document.addEventListener('DOMContentLoaded', () => {
+    const menu2 = document.querySelector('.menu-2');
 
-// 2. EL RADAR: Captura tu barra de navegación del HTML usando su clase
-const barraMenu = document.querySelector('.menu'); 
+    if (!menu2) return;
 
-// 3. EL SENSOR: Le pone una "oreja" a toda la pantalla del navegador (window)
-// Se queda espiando de forma infinita cada vez que el usuario mueve el scroll del mouse
-window.addEventListener('scroll', () => {
-    
-    // Captura en cuántos píxeles de altura está el usuario en este microsegundo
-    let posicionActualScroll = window.scrollY; 
+    // Define cuántos píxeles quieres que baje/se separe la caja al inicio
+    const distanciaInicial = 50; 
 
-    // 4. LA CONDICIÓN LÓGICA (El sistema de decisiones)
-    if (posicionActualScroll > ultimaPosicionScroll && posicionActualScroll > 150) {
-        
-        // SI la posición actual es mayor (Significa que vas hacia ABAJO)
-        // Y ya pasaste los 150px de la portada ➡️ INYECTA LA CLASE INVENTADA
-        barraMenu.classList.add('oculto'); 
+    function actualizarMenu() {
+        let scrollY = window.scrollY;
 
-    } else {
-        
-        // SI NO (Significa que frenaste el mouse o vas hacia ARRIBA)
-        // ➡️ BORRA LA CLASE INVENTADA de la cédula para que el menú regrese a top: 0
-        barraMenu.classList.remove('oculto'); 
+        // A la distancia inicial le restamos el scroll actual.
+        // Math.max asegura que se detenga en 0 cuando llegue arriba del todo.
+        let movimiento = Math.max(0, distanciaInicial - scrollY);
+
+        // Aplicamos el movimiento directamente en tiempo real
+        menu2.style.transform = `translateY(${movimiento}px)`;
     }
 
-    // Actualizamos el almacén con la posición actual para el siguiente movimiento
-    ultimaPosicionScroll = posicionActualScroll; 
+    // Ejecuta al cargar la página para que no empiece pegada
+    actualizarMenu();
+
+    // Actualiza dinámicamente cada vez que haces scroll
+    window.addEventListener('scroll', actualizarMenu);
 });
