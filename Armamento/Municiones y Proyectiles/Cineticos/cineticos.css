@@ -37,7 +37,7 @@ body{
     position: fixed;
     top: 60px;
     width: 80%;
-    height: 40px;
+    height: 6%;
     background-color: #0b0b0e;
     border: 1px solid #c4c4c4;
     /* Propiedades clave para centrar tu caja del 80% con position fixed */
@@ -227,6 +227,10 @@ body{
 
 }
 
+.icon-quiz {
+    display: flex;
+    color: #faf9f9;
+}
 
 .ocultar {
     display: flex;
@@ -236,16 +240,157 @@ body{
 }
 
 
-.tipos-de-armamento {
-    display: flex;
-    flex-direction: row;
-    border-style: solid;
-    height: 95%;
-}
+
 
 .relleno {
     width: 100%;
     height: 35%;
+}
+
+.recomendacion {
+    display: flex;
+    height: 10%;
+    gap: 10px;
+}
+
+.recomendacion h2 {
+    font-weight: 350;
+    font-size: 1rem;
+    margin-top: 1.2%;
+    letter-spacing: 2px;
+}
+
+.icon-recomendacion {
+    display: flex;
+    margin-top: 1.1%;
+    margin-left: 2%;
+    color: #ffffff !important;
+}
+
+.tipos-de-armamento {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    height: 50%;
+    justify-self: end;
+    margin-top: 0.4%;
+    justify-content: space-evenly;
+    
+
+}
+
+.proyectiles {
+    display: flex;
+    border-style: solid;
+    align-self: center;
+    height: 30%;
+    border-width: 1px;
+    background-color: #000000;
+    color: #939393;
+    padding: 10px;
+    margin-top: 0.5%;
+    gap: 10px;
+}
+
+.proyectiles h3 {
+    align-self: center;
+    font-weight: 350;
+    font-size: 0.8rem;
+}
+
+.misiles {
+    display: flex;
+    border-style: solid;
+    align-self: center;
+    height: 30%;
+    border-width: 1px;
+    background-color: #000000;
+    color: #939393;
+    padding: 10px;
+    margin-top: 0.5%;
+    gap: 10px;
+}
+
+.misiles h3 {
+    align-self: center;
+    font-weight: 350;
+    font-size: 0.8rem;
+}
+
+.cohetes {
+    display: flex;
+    border-style: solid;
+    align-self: center;
+    height: 30%;
+    border-width: 1px;
+    background-color: #000000;
+    color: #939393;
+    padding: 10px;
+    margin-top: 0.5%;
+    gap: 10px;
+}
+
+.cohetes h3 {
+    align-self: center;
+    font-weight: 350;
+    font-size: 0.8rem;
+}
+
+.bombas {
+    display: flex;
+    border-style: solid;
+    align-self: center;
+    height: 30%;
+    border-width: 1px;
+    background-color: #000000;
+    color: #939393;
+    padding: 10px;
+    margin-top: 0.5%;
+    gap: 10px;
+}
+
+.bombas h3 {
+    align-self: center;
+    font-weight: 350;
+    font-size: 0.8rem;
+}
+
+.subacuaticos {
+    display: flex;
+    border-style: solid;
+    align-self: center;
+    height: 30%;
+    border-width: 1px;
+    background-color: #000000;
+    color: #939393;
+    padding: 10px;
+    margin-top: 0.5%;
+    gap: 10px;
+}
+
+.subacuaticos h3 {
+    align-self: center;
+    font-weight: 350;
+    font-size: 0.8rem;
+}
+
+.prototipos {
+    display: flex;
+    border-style: solid;
+    align-self: center;
+    height: 30%;
+    border-width: 1px;
+    background-color: #000000;
+    color: #939393;
+    padding: 10px;
+    margin-top: 0.5%;
+    gap: 10px;
+}
+
+.prototipos h3 {
+    align-self: center;
+    font-weight: 350;
+    font-size: 0.8rem;
 }
 
 .cineticos-img-resumen {
