@@ -282,6 +282,7 @@ body{
 .proyectiles {
     display: flex;
     border-style: solid;
+    align-items: center;
     align-self: center;
     height: 30%;
     border-width: 1px;
@@ -302,6 +303,7 @@ body{
     display: flex;
     border-style: solid;
     align-self: center;
+    align-items: center;
     height: 30%;
     border-width: 1px;
     background-color: #000000;
@@ -321,6 +323,7 @@ body{
     display: flex;
     border-style: solid;
     align-self: center;
+    align-items: center;
     height: 30%;
     border-width: 1px;
     background-color: #000000;
@@ -340,6 +343,7 @@ body{
     display: flex;
     border-style: solid;
     align-self: center;
+    align-items: center;
     height: 30%;
     border-width: 1px;
     background-color: #000000;
@@ -359,6 +363,7 @@ body{
     display: flex;
     border-style: solid;
     align-self: center;
+    align-items: center;
     height: 30%;
     border-width: 1px;
     background-color: #000000;
@@ -378,6 +383,7 @@ body{
     display: flex;
     border-style: solid;
     align-self: center;
+    align-items: center;
     height: 30%;
     border-width: 1px;
     background-color: #000000;
