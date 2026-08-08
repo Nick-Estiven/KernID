@@ -407,69 +407,93 @@ body{
     border-color: #f4f3f3;
     border-width: 1px;
     width: 40%;
-    height: 60%;
+    height: 65%;
+    margin: 0;
+    margin-right: 5%;
+
+}
+
+.icon-ultimas-actualizaciones {
+    display: flex;
+    color: #ffffff !important;
+    margin-left: 3%;
+    margin-right: 4%;
+
+}
+
+.ultimas-actualizaciones-icon-titulo {
+    display: flex;
+    border-width: 1px;
+    background-color: #000000;
+    margin: 0;
 }
 
 .ultimas-actualizaciones-titulo {
     display: flex;
-    flex-direction: row;
-    border-style: solid;
     border-width: 1px;
-    background-color: #000000;
+    background-color: #060606;
+    margin: 0;
+    width: 100%;
+    margin-top: 1%;
 }
 
 .ultimas-actualizaciones {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border-style: solid;
     height: 100%;
+    background-color: #060606;
+    gap: 10px;
 }
 
 .ultimas-actualizaciones-l {
     display: flex;
     flex-direction: column;
-    border-style: solid;
     height: 100%;
     width: 45%;
+    gap: 10px;
 }
 
 .ultimas-actualizaciones-r {
     display: flex;
     flex-direction: column;
-    border-style: solid;
     height: 100%;
     width: 45%;
+    gap: 10px;
 }
 
 .actualizacion-1 {
     display: flex;
     border-style: solid;
-    height: 45%;
-    height: 95%;
+    border-width: 1px;
+    border-radius: 4%;
+    height: 40%;
+    margin-top: 8%;
 } 
 
 .actualizacion-2 {
     display: flex;
-
     border-style: solid;
-    height: 45%;
-    height: 95%;
+    border-width: 1px;
+    border-radius: 4%;
+    height: 40%;
 } 
 
 .actualizacion-3 {
     display: flex;
     border-style: solid;
-    height: 45%;
-    height: 95%;
+    border-width: 1px;
+    border-radius: 4%;
+    height: 40%;
+    margin-top: 8%;
 } 
 
 .actualizacion-4 {
     display: flex;
-
     border-style: solid;
-    height: 45%;
-    height: 95%;
+    border-width: 1px;
+    border-radius: 4%;
+    height: 40%;
 }
 /*----------------------------------------------------------FIN---INFORMACION R-----------------------------------------------------------------------------------------*/
 
