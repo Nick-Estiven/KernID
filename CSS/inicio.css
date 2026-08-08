@@ -204,7 +204,7 @@ body{
     color: #faf9f9;
 }
 /*------------------------------------------------------------------INICIO-----------------------------------------------------------------------------------------*/
-.inicio {
+.home-box-1 {
     display: flex;
     flex-direction: row;
     border-style: solid;
@@ -396,6 +396,82 @@ body{
 
 }
 /*----------------------------------------------------------FIN---ELEMENTO 6-----------------------------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------INFORMACION R-----------------------------------------------------------------------------------------*/
+.informacion-r {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    border-style: solid;
+    border-color: #f4f3f3;
+    border-width: 1px;
+    width: 40%;
+    height: 60%;
+}
+
+.ultimas-actualizaciones-titulo {
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #000000;
+}
+
+.ultimas-actualizaciones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-style: solid;
+    height: 100%;
+}
+
+.ultimas-actualizaciones-l {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    height: 100%;
+    width: 45%;
+}
+
+.ultimas-actualizaciones-r {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    height: 100%;
+    width: 45%;
+}
+
+.actualizacion-1 {
+    display: flex;
+    border-style: solid;
+    height: 45%;
+    height: 95%;
+} 
+
+.actualizacion-2 {
+    display: flex;
+
+    border-style: solid;
+    height: 45%;
+    height: 95%;
+} 
+
+.actualizacion-3 {
+    display: flex;
+    border-style: solid;
+    height: 45%;
+    height: 95%;
+} 
+
+.actualizacion-4 {
+    display: flex;
+
+    border-style: solid;
+    height: 45%;
+    height: 95%;
+}
+/*----------------------------------------------------------FIN---INFORMACION R-----------------------------------------------------------------------------------------*/
 
 .categorias {
        display: flex;
