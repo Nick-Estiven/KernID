@@ -531,19 +531,44 @@ hr {
     flex-direction: column;
     border-style: solid;
     border-width: 1px;
+    border-color: #939393;
     height: 100%;
     width: 32%;
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 1);
+    position: relative;     /* Necesario para posicionar la capa encima */
+    overflow: hidden;
 }
 
-
+.categoria-armamento::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* Sombra interior o degradado de viñeta */
+    box-shadow: inset 0px 0px 200px rgba(0, 0, 0, 0.9); 
+    pointer-events: none;   /* Crucial: permite que los clics y el cursor atraviesen esa capa y lleguen directamente a lo que esté debajo o dentro. */
+}
 
 .categoria-terrestres {
     display: flex;
     flex-direction: column;
     border-style: solid;
     border-width: 1px;
+    border-color: #939393;
     height: 100%;
     width: 32%;
+    position: relative;     /* Necesario para posicionar la capa encima */
+    overflow: hidden;
+}
+
+.categoria-terrestres::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* Sombra interior o degradado de viñeta */
+    box-shadow: inset 0px 0px 200px rgba(0, 0, 0, 0.9); 
+    pointer-events: none;   /* Crucial: permite que los clics y el cursor atraviesen esa capa y lleguen directamente a lo que esté debajo o dentro. */
 }
 
 .categoria-aereos {
@@ -551,8 +576,21 @@ hr {
     flex-direction: column;
     border-style: solid;
     border-width: 1px;
+    border-color: #939393;
     height: 100%;
     width: 32%;
+    position: relative;     /* Necesario para posicionar la capa encima */
+    overflow: hidden;
+}
+
+.categoria-aereos::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* Sombra interior o degradado de viñeta */
+    box-shadow: inset 0px 0px 200px rgba(0, 0, 0, 0.9); 
+    pointer-events: none;   /* Crucial: permite que los clics y el cursor atraviesen esa capa y lleguen directamente a lo que esté debajo o dentro. */
 }
 
 .categorias-fila-2 {
@@ -568,8 +606,21 @@ hr {
     flex-direction: column;
     border-style: solid;
     border-width: 1px;
+    border-color: #939393;
     height: 100%;
     width: 32%;
+    position: relative;     /* Necesario para posicionar la capa encima */
+    overflow: hidden;
+}
+
+.categoria-navales::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* Sombra interior o degradado de viñeta */
+    box-shadow: inset 0px 0px 200px rgba(0, 0, 0, 0.9); 
+    pointer-events: none;   /* Crucial: permite que los clics y el cursor atraviesen esa capa y lleguen directamente a lo que esté debajo o dentro. */
 }
 
 .categoria-proteccion {
@@ -577,8 +628,21 @@ hr {
     flex-direction: column;
     border-style: solid;
     border-width: 1px;
+    border-color: #939393;
     height: 100%;
     width: 32%;
+    position: relative;     /* Necesario para posicionar la capa encima */
+    overflow: hidden;
+}
+
+.categoria-proteccion::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* Sombra interior o degradado de viñeta */
+    box-shadow: inset 0px 0px 200px rgba(0, 0, 0, 0.9); 
+    pointer-events: none;   /* Crucial: permite que los clics y el cursor atraviesen esa capa y lleguen directamente a lo que esté debajo o dentro. */
 }
 
 .categoria-ingenieria {
@@ -586,12 +650,35 @@ hr {
     flex-direction: column;
     border-style: solid;
     border-width: 1px;
+    border-color: #939393;
     height: 100%;
     width: 32%;
+    position: relative;     /* Necesario para posicionar la capa encima */
+    overflow: hidden;
 }
 
+.categoria-ingenieria::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* Sombra interior o degradado de viñeta */
+    box-shadow: inset 0px 0px 200px rgba(0, 0, 0, 0.9); 
+    pointer-events: none;   /* Crucial: permite que los clics y el cursor atraviesen esa capa y lleguen directamente a lo que esté debajo o dentro. */
+}
 
 /* ---------------------------------------------------------FIN---CATEGORIAS------------------------------------------------------------------------------------------- */
+
+
+.caja-final {
+    display: flex;
+    flex-direction: row;
+    width: 99.5%;
+    height: 5%;
+    border-style: solid;
+    margin: 0;
+    margin-top: 5%;
+}
 
 
 /*-----------------------------------------------------------FRASES-------------------------------------------------------*/
