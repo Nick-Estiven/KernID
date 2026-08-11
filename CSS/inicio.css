@@ -534,7 +534,6 @@ hr {
     border-color: #939393;
     height: 100%;
     width: 32%;
-    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 1);
     position: relative;     /* Necesario para posicionar la capa encima */
     overflow: hidden;
 }
@@ -545,8 +544,41 @@ hr {
     width: 100%;
     height: 100%;
     /* Sombra interior o degradado de viñeta */
-    box-shadow: inset 0px 0px 200px rgba(0, 0, 0, 0.9); 
+    box-shadow: inset 0px 0px 200px rgba(1, 1, 1, 0.998); 
     pointer-events: none;   /* Crucial: permite que los clics y el cursor atraviesen esa capa y lleguen directamente a lo que esté debajo o dentro. */
+    transition: all 0.5s ease-in-out;
+}
+
+.categoria-armamento:hover::after {
+    box-shadow: inset 0px 0px 200px rgba(46, 46, 46, 0.998);
+}
+
+.categoria-1-icon {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    width: 100%;
+    height: 15%;
+    margin: 0;
+    margin-top: 2%;
+    gap: 63%;
+}
+
+.categoria-1 {
+    display: flex;
+    z-index: 1;
+    margin: 0;
+    margin-left: 5%;
+    padding: 0.5%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #939393;
+    background-color: #000000aa;
+}
+
+.icon-categoria-1 {
+    color: #ffffff;
+    z-index: 1;
 }
 
 .categoria-terrestres {
@@ -569,7 +601,41 @@ hr {
     /* Sombra interior o degradado de viñeta */
     box-shadow: inset 0px 0px 200px rgba(0, 0, 0, 0.9); 
     pointer-events: none;   /* Crucial: permite que los clics y el cursor atraviesen esa capa y lleguen directamente a lo que esté debajo o dentro. */
+    transition: all 0.5s ease-in-out;
 }
+
+.categoria-terrestres:hover::after {
+    box-shadow: inset 0px 0px 200px rgba(46, 46, 46, 0.998);
+}
+
+.categoria-2-icon {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    width: 100%;
+    height: 15%;
+    margin: 0;
+    margin-top: 2%;
+    gap: 63%;
+}
+
+.categoria-2 {
+    display: flex;
+    z-index: 1;
+    margin: 0;
+    margin-left: 5%;
+    padding: 0.5%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #939393;
+    background-color: #000000aa;
+}
+
+.icon-categoria-2 {
+    color: #ffffff;
+    z-index: 1;
+}
+
 
 .categoria-aereos {
     display: flex;
@@ -591,6 +657,38 @@ hr {
     /* Sombra interior o degradado de viñeta */
     box-shadow: inset 0px 0px 200px rgba(0, 0, 0, 0.9); 
     pointer-events: none;   /* Crucial: permite que los clics y el cursor atraviesen esa capa y lleguen directamente a lo que esté debajo o dentro. */
+    transition: all 0.5s ease-in-out;
+}
+
+.categoria-aereos:hover::after {
+    box-shadow: inset 0px 0px 200px rgba(46, 46, 46, 0.998);
+}
+.categoria-3-icon {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    width: 100%;
+    height: 15%;
+    margin: 0;
+    margin-top: 2%;
+    gap: 63%;
+}
+
+.categoria-3 {
+    display: flex;
+    z-index: 1;
+    margin: 0;
+    margin-left: 5%;
+    padding: 0.5%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #939393;
+    background-color: #000000aa;
+}
+
+.icon-categoria-3 {
+    color: #ffffff;
+    z-index: 1;
 }
 
 .categorias-fila-2 {
@@ -621,7 +719,41 @@ hr {
     /* Sombra interior o degradado de viñeta */
     box-shadow: inset 0px 0px 200px rgba(0, 0, 0, 0.9); 
     pointer-events: none;   /* Crucial: permite que los clics y el cursor atraviesen esa capa y lleguen directamente a lo que esté debajo o dentro. */
+    transition: all 0.5s ease-in-out;
 }
+
+.categoria-navales:hover::after {
+    box-shadow: inset 0px 0px 200px rgba(46, 46, 46, 0.998);
+}
+
+.categoria-4-icon {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    width: 100%;
+    height: 15%;
+    margin: 0;
+    margin-top: 2%;
+    gap: 63%;
+}
+
+.categoria-4 {
+    display: flex;
+    z-index: 1;
+    margin: 0;
+    margin-left: 5%;
+    padding: 0.5%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #939393;
+    background-color: #000000aa;
+}
+
+.icon-categoria-4 {
+    color: #ffffff;
+    z-index: 1;
+}
+
 
 .categoria-proteccion {
     display: flex;
@@ -643,7 +775,41 @@ hr {
     /* Sombra interior o degradado de viñeta */
     box-shadow: inset 0px 0px 200px rgba(0, 0, 0, 0.9); 
     pointer-events: none;   /* Crucial: permite que los clics y el cursor atraviesen esa capa y lleguen directamente a lo que esté debajo o dentro. */
+    transition: all 0.5s ease-in-out;
 }
+
+.categoria-proteccion:hover::after {
+    box-shadow: inset 0px 0px 200px rgba(46, 46, 46, 0.998);
+}
+
+.categoria-5-icon {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    width: 100%;
+    height: 15%;
+    margin: 0;
+    margin-top: 2%;
+    gap: 63%;
+}
+
+.categoria-5 {
+    display: flex;
+    z-index: 1;
+    margin: 0;
+    margin-left: 5%;
+    padding: 0.5%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #939393;
+    background-color: #000000aa;
+}
+
+.icon-categoria-5 {
+    color: #ffffff;
+    z-index: 1;
+}
+
 
 .categoria-ingenieria {
     display: flex;
@@ -665,11 +831,44 @@ hr {
     /* Sombra interior o degradado de viñeta */
     box-shadow: inset 0px 0px 200px rgba(0, 0, 0, 0.9); 
     pointer-events: none;   /* Crucial: permite que los clics y el cursor atraviesen esa capa y lleguen directamente a lo que esté debajo o dentro. */
+    transition: all 0.5s ease-in-out;
+}
+
+.categoria-ingenieria:hover::after {
+    box-shadow: inset 0px 0px 200px rgba(46, 46, 46, 0.998);
+}
+
+.categoria-6-icon {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    width: 100%;
+    height: 15%;
+    margin: 0;
+    margin-top: 2%;
+    gap: 63%;
+}
+
+.categoria-6 {
+    display: flex;
+    z-index: 1;
+    margin: 0;
+    margin-left: 5%;
+    padding: 0.5%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #939393;
+    background-color: #000000aa;
+}
+
+.icon-categoria-6 {
+    color: #ffffff;
+    z-index: 1;
 }
 
 /* ---------------------------------------------------------FIN---CATEGORIAS------------------------------------------------------------------------------------------- */
 
-
+/* ---------------------------------------------------------------CAJA PENULTIMA-------------------------------------------------------------------------------------------------------- */
 .caja-penultima {
     display: flex;
     flex-direction: row;
@@ -690,6 +889,9 @@ hr {
     margin: 0;
     margin-top: 4%;
 }
+/* ---------------------------------------------------------FIN---CAJA PENULTIMA-------------------------------------------------------------------------------------------------------- */
+
+
 /*-----------------------------------------------------------FRASES-------------------------------------------------------*/
 /* Centra el contenedor en la mitad libre de tu cielo */
 .bienvenida-container {
