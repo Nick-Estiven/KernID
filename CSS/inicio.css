@@ -526,7 +526,7 @@ hr {
     height: 50%;
 }
 
-.categoria-armamento {
+.categoria {
     display: flex;
     flex-direction: column;
     border-style: solid;
@@ -538,7 +538,7 @@ hr {
     overflow: hidden;
 }
 
-.categoria-armamento::after {
+.categoria::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -549,7 +549,7 @@ hr {
     transition: all 0.5s ease-in-out;
 }
 
-.categoria-armamento:hover::after {
+.categoria:hover::after {
     box-shadow: inset 0px 0px 200px rgba(46, 46, 46, 0.998);
 }
 
@@ -581,32 +581,6 @@ hr {
     z-index: 1;
 }
 
-.categoria-terrestres {
-    display: flex;
-    flex-direction: column;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #939393;
-    height: 100%;
-    width: 32%;
-    position: relative;     /* Necesario para posicionar la capa encima */
-    overflow: hidden;
-}
-
-.categoria-terrestres::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    /* Sombra interior o degradado de viñeta */
-    box-shadow: inset 0px 0px 200px rgba(0, 0, 0, 0.9); 
-    pointer-events: none;   /* Crucial: permite que los clics y el cursor atraviesen esa capa y lleguen directamente a lo que esté debajo o dentro. */
-    transition: all 0.5s ease-in-out;
-}
-
-.categoria-terrestres:hover::after {
-    box-shadow: inset 0px 0px 200px rgba(46, 46, 46, 0.998);
-}
 
 .categoria-2-icon {
     display: flex;
@@ -636,33 +610,6 @@ hr {
     z-index: 1;
 }
 
-
-.categoria-aereos {
-    display: flex;
-    flex-direction: column;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #939393;
-    height: 100%;
-    width: 32%;
-    position: relative;     /* Necesario para posicionar la capa encima */
-    overflow: hidden;
-}
-
-.categoria-aereos::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    /* Sombra interior o degradado de viñeta */
-    box-shadow: inset 0px 0px 200px rgba(0, 0, 0, 0.9); 
-    pointer-events: none;   /* Crucial: permite que los clics y el cursor atraviesen esa capa y lleguen directamente a lo que esté debajo o dentro. */
-    transition: all 0.5s ease-in-out;
-}
-
-.categoria-aereos:hover::after {
-    box-shadow: inset 0px 0px 200px rgba(46, 46, 46, 0.998);
-}
 .categoria-3-icon {
     display: flex;
     position: absolute;
@@ -699,33 +646,6 @@ hr {
     height: 50%;
 }
 
-.categoria-navales {
-    display: flex;
-    flex-direction: column;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #939393;
-    height: 100%;
-    width: 32%;
-    position: relative;     /* Necesario para posicionar la capa encima */
-    overflow: hidden;
-}
-
-.categoria-navales::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    /* Sombra interior o degradado de viñeta */
-    box-shadow: inset 0px 0px 200px rgba(0, 0, 0, 0.9); 
-    pointer-events: none;   /* Crucial: permite que los clics y el cursor atraviesen esa capa y lleguen directamente a lo que esté debajo o dentro. */
-    transition: all 0.5s ease-in-out;
-}
-
-.categoria-navales:hover::after {
-    box-shadow: inset 0px 0px 200px rgba(46, 46, 46, 0.998);
-}
-
 .categoria-4-icon {
     display: flex;
     position: absolute;
@@ -754,34 +674,6 @@ hr {
     z-index: 1;
 }
 
-
-.categoria-proteccion {
-    display: flex;
-    flex-direction: column;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #939393;
-    height: 100%;
-    width: 32%;
-    position: relative;     /* Necesario para posicionar la capa encima */
-    overflow: hidden;
-}
-
-.categoria-proteccion::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    /* Sombra interior o degradado de viñeta */
-    box-shadow: inset 0px 0px 200px rgba(0, 0, 0, 0.9); 
-    pointer-events: none;   /* Crucial: permite que los clics y el cursor atraviesen esa capa y lleguen directamente a lo que esté debajo o dentro. */
-    transition: all 0.5s ease-in-out;
-}
-
-.categoria-proteccion:hover::after {
-    box-shadow: inset 0px 0px 200px rgba(46, 46, 46, 0.998);
-}
-
 .categoria-5-icon {
     display: flex;
     position: absolute;
@@ -808,34 +700,6 @@ hr {
 .icon-categoria-5 {
     color: #ffffff;
     z-index: 1;
-}
-
-
-.categoria-ingenieria {
-    display: flex;
-    flex-direction: column;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #939393;
-    height: 100%;
-    width: 32%;
-    position: relative;     /* Necesario para posicionar la capa encima */
-    overflow: hidden;
-}
-
-.categoria-ingenieria::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    /* Sombra interior o degradado de viñeta */
-    box-shadow: inset 0px 0px 200px rgba(0, 0, 0, 0.9); 
-    pointer-events: none;   /* Crucial: permite que los clics y el cursor atraviesen esa capa y lleguen directamente a lo que esté debajo o dentro. */
-    transition: all 0.5s ease-in-out;
-}
-
-.categoria-ingenieria:hover::after {
-    box-shadow: inset 0px 0px 200px rgba(46, 46, 46, 0.998);
 }
 
 .categoria-6-icon {
