@@ -670,6 +670,17 @@ hr {
 /* ---------------------------------------------------------FIN---CATEGORIAS------------------------------------------------------------------------------------------- */
 
 
+.caja-penultima {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 5%;
+    border-style: solid;
+    margin: 0;
+    margin-top: 4%;
+    margin-left: 10%;
+}
+
 .caja-final {
     display: flex;
     flex-direction: row;
@@ -677,10 +688,8 @@ hr {
     height: 5%;
     border-style: solid;
     margin: 0;
-    margin-top: 5%;
+    margin-top: 4%;
 }
-
-
 /*-----------------------------------------------------------FRASES-------------------------------------------------------*/
 /* Centra el contenedor en la mitad libre de tu cielo */
 .bienvenida-container {
