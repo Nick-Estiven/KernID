@@ -204,7 +204,7 @@ body{
     color: #faf9f9;
 }
 /*------------------------------------------------------------------INICIO-----------------------------------------------------------------------------------------*/
-.home-box-1 {
+.home {
     display: flex;
     flex-direction: row;
     border-style: solid;
@@ -220,14 +220,14 @@ body{
 
 }
 
-.informacion-l {
+.home__left {
     display: flex;
     flex-direction: column;
     width: 60%;
     height: 100%;
 }
-/*-------------------------------------------------------------ELEMENTO 1-----------------------------------------------------------------------------------------*/
-.elemento-1 {
+/*-------------------------------------------------------------HOME-BOX__ELEMENT-1-----------------------------------------------------------------------------------------*/
+.home__element-1 {
     display: flex;
     width: 39.5%;
     height: 2%;
@@ -241,7 +241,7 @@ body{
     margin-left: 5%;
 }
 
-.elemento-1-h2 {
+.home__element-1-h2 {
     display: flex;
     font-size: 0.7rem;
     align-self: center;
@@ -250,7 +250,7 @@ body{
     margin-top: 3%;
 }
 
-.icon-elemento-1 {
+.home__icon-element-1 {
     display: flex;
     align-self: end;
     margin-right: 10px;
@@ -279,22 +279,22 @@ body{
 .icon-elemento-1 {
   animation: alerta-brillo 1.5s infinite ease-in-out;
 }
-/*-------------------------------------------------------------ELEMENTO 1-----------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------END---HOME-BOX__ELEMENT-1-----------------------------------------------------------------------------------------*/
 
 
-/*-------------------------------------------------------------ELEMENTO 2-----------------------------------------------------------------------------------------*/
-.elemento-2-h1 {
+/*-------------------------------------------------------------HOME-BOX__TITTLE-----------------------------------------------------------------------------------------*/
+.home__tittle {
     display: flex;
     font-size: 2.5rem;
     margin: 0;
     margin-left: 5%;
     margin-top: 3%;
 }
-/*----------------------------------------------------------FIN---ELEMENTO 2-----------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------END---HOME-BOX__TITTLE-----------------------------------------------------------------------------------------*/
 
 
-/*-------------------------------------------------------------ELEMENTO 3-----------------------------------------------------------------------------------------*/
-.elemento-3 {
+/*-------------------------------------------------------------HOME-BOX__SUMMARY-----------------------------------------------------------------------------------------*/
+.home__summary {
     margin-left: 5%;
     color:#e4e4e4;
     margin-top: 1%;
@@ -302,20 +302,25 @@ body{
     font-size: 0.9rem;
     font-weight: 500;
     width: 80%;
+    transition: all 0.5s ease-in-out;
 }
-/*---------------------------------------------------------FIN----ELEMENTO 3-----------------------------------------------------------------------------------------*/
+
+.home__summary:hover {
+    color: #ffffff;
+    font-size: 0.93rem;
+}
+/*---------------------------------------------------------END----HOME-BOX__SUMMARY-----------------------------------------------------------------------------------------*/
 
 
 /*-------------------------------------------------------------ELEMENTO 4/5----------------------------------------------------------------------------------------*/
-.elemento-4-5 {
+.home__btns {
     display: flex;
     margin-top: 2%;
     width: 95%;
     height: 10%;
 }
 
-/*-------------------------------------------------------------ELEMENTO 4-----------------------------------------------------------------------------------------*/
-.elemento-4 {
+.home__btn {
     border-style: solid;
     border-width: 1px;
     margin: 0;
@@ -323,55 +328,42 @@ body{
     width: 20%;
     height: 100%;
     background-color: #000000;
-    
+    transition: all 0.7s ease-in-out;
 }
 
-.elemento-4-p {
+.home__btn:hover {
+    scale: 1.1;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.home__btn:hover .home__btn--icon {
+    color: #000000;
+}
+
+.home__btn--classification {
+    width: 40% !important;
+}
+
+.home__btn--text {
     display: flex;
     margin: 0%;
     margin-top: 5.5%;
 }
 
-.icon-elemento-4 {
+.home__btn--text-2 {
+    margin-top: 3% !important;
+}
+
+.home__btn--icon {
     margin-left: 5%;
     margin-right: 5%;
     display: flex;
-    color: #ffffff !important;
-
+    color: #ffffff;
+    transition: all 0.7s ease-in-out;
 }
-
-/*----------------------------------------------------------FIN---ELEMENTO 4-----------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------ELEMENTO 5-----------------------------------------------------------------------------------------*/
-.elemento-5 {
-    border-style: solid;
-    border-width: 1px;
-    margin: 0;
-    margin-left: 5%;
-    width: 40%;
-    height: 100%;
-    background-color: #000000;
-    
-}
-
-.elemento-5-p {
-    display: flex;
-    margin: 0%;
-    margin-top: 3%;
-}
-
-.icon-elemento-5 {
-    margin-left: 5%;
-    margin-right: 5%;
-    display: flex;
-    color: #ffffff !important;
-
-}
-/*----------------------------------------------------------FIN---ELEMENTO 5-----------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------FIN---ELEMENTO 4/5----------------------------------------------------------------------------------------*/
-
-
 /*-------------------------------------------------------------ELEMENTO 6-----------------------------------------------------------------------------------------*/
-.elemento-6 {
+.home__btn--simulation {
     border-style: solid;
     border-width: 1px;
     margin: 0;
@@ -380,22 +372,36 @@ body{
     height: 10%;
     background-color: #ffffff;
     margin-top: 4%;
-    
+    transition: all 0.7s ease-in-out;   
 }
 
-.elemento-6-p {
+.home__btn--simulation:hover {
+    scale: 1.1;
+    background-color: #000000;
+}
+
+.home__btn--simulation:hover .home__text--simulation {
+    color: #ffffff;
+}
+
+.home__text--simulation {
     display: flex;
     margin: 0%;
     margin-top: 2%;
     color: #000000;
+    transition: all 0.7s ease-in-out;
 }
 
-.icon-elemento-6 {
+.home__btn--simulation:hover .home__btn--icon-simulation {
+    color: #ffffff !important;
+}
+
+.home__btn--icon-simulation {
     margin-left: 5%;
     margin-right: 5%;
     display: flex;
     color: #060606 !important;
-
+    transition: all 0.7s ease-in-out;
 }
 /*----------------------------------------------------------FIN---ELEMENTO 6-----------------------------------------------------------------------------------------*/
 
@@ -701,7 +707,7 @@ hr {
     border-style: solid;
     border-width: 1px;
     margin: 0;
-    margin-top: 4%;
+    margin-top: 5.9%;
     margin-left: 10%;
     justify-content: center;
     gap: 10px;
@@ -748,14 +754,14 @@ hr {
     color: #c2c2c2;
 }
 
-.footer-expandible {
+.footer {
     display: flex;
     flex-direction: row;
     width: 99.5%;
     height: 5%;
     border-style: solid;
     margin: 0;
-    margin-top: 4%;
+    margin-top: 3%;
 }
 /* ---------------------------------------------------------FIN----------------------------------------------------------------------------------------------------------- */
 
