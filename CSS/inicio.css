@@ -216,7 +216,7 @@ body{
     margin-left: 10%;
     background-image: url(../imagenes/Fondos/fondo-puntos-blancos-intermedios.png);
     margin-bottom: 2.5%;
-
+    box-shadow: 0 0px 20px rgba(247, 247, 247, 0.139);
 
 }
 
@@ -296,10 +296,11 @@ body{
 /*-------------------------------------------------------------ELEMENTO 3-----------------------------------------------------------------------------------------*/
 .elemento-3 {
     margin-left: 5%;
-    color:#c4c4c4;
+    color:#e4e4e4;
     margin-top: 1%;
     filter: drop-shadow(3px 2px 2px rgba(0, 0, 0, 1));
     font-size: 0.9rem;
+    font-weight: 500;
     width: 80%;
 }
 /*---------------------------------------------------------FIN----ELEMENTO 3-----------------------------------------------------------------------------------------*/
@@ -536,6 +537,7 @@ hr {
     width: 32%;
     position: relative;     /* Necesario para posicionar la capa encima */
     overflow: hidden;
+    transition: all 0.4s ease-in-out;
 }
 
 .categoria::after {
@@ -544,13 +546,21 @@ hr {
     width: 100%;
     height: 100%;
     /* Sombra interior o degradado de viñeta */
-    box-shadow: inset 0px 0px 200px rgba(1, 1, 1, 0.998); 
+    box-shadow: inset 0px 0px 700px rgb(0, 0, 0); 
     pointer-events: none;   /* Crucial: permite que los clics y el cursor atraviesen esa capa y lleguen directamente a lo que esté debajo o dentro. */
-    transition: all 0.5s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 .categoria:hover::after {
-    box-shadow: inset 0px 0px 200px rgba(46, 46, 46, 0.998);
+    box-shadow: inset 0px 0px 200px rgba(255, 255, 255, 0.507);
+}
+
+.categoria:hover {
+    box-shadow: 0 0px 20px rgba(206, 206, 206, 0.278);
+}
+
+.categoria:hover .categoria__icon {
+    scale: 1.2;
 }
 
 .categoria__numero-icon {
@@ -558,10 +568,11 @@ hr {
     position: absolute;
     flex-direction: row;
     width: 100%;
-    height: 15%;
+    height: 12%;
     margin: 0;
     margin-top: 2%;
     gap: 63%;
+    
 }
 
 .categoria__numero {
@@ -569,33 +580,142 @@ hr {
     z-index: 1;
     margin: 0;
     margin-left: 5%;
-    padding: 0.5%;
+    font-size: 0.9rem;
     border-style: solid;
     border-width: 1px;
     border-color: #939393;
     background-color: #000000aa;
+    filter: opacity(0.5);
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 .categoria__icon {
     color: #ffffff;
     z-index: 1;
+    transition: all 0.5s ease-in-out;
 }
 
+.categoria__icon-tittle {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    z-index: 2;
+    margin-top: 10%;
+    margin-left: 3%;
+    margin-top: 8%;
+    
+}
+
+.categoria__icon-right {
+    display: flex;
+    color: red;
+    margin-top: 2.5%;
+}
+
+.categoria__tittle {
+    display: flex;
+    margin: 0;
+    font-weight: 400;
+    transition: all 0.5s ease-in-out;
+}
+
+.categoria:hover .categoria__tittle {
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 1));
+}
+
+.categoria__resumen {
+    display: flex;
+    position: absolute;
+    width: 90%;
+    z-index: 2;
+    margin: 0;
+    margin-top: 16%;
+    margin-left: 5%;
+    font-size: 0.7rem;
+    color: #fefdfdd9;
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 1));
+    transition: all 0.5s ease-in-out;
+}
+
+.categoria:hover .categoria__resumen {
+    color: #000000;
+    filter: drop-shadow(0px 0px 10px rgb(255, 254, 254));
+    font-weight: 700;
+}
+
+.categoria__hr {
+    display: flex;
+    position: absolute;
+    width: 90%;
+    z-index: 3;
+    margin-top: 31%;
+    margin-left: 5%;
+}
+
+.categoria__btn {
+    display: flex;
+    position: absolute;
+    border-style: solid;
+    border-width: 1px;
+    width: 90%;
+    height: 10%;
+    z-index: 2;
+    margin-top: 33%;
+    margin-left: 5%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    font-size: 0.9rem;
+    font-weight: 300;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff81;
+    color: #000000;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+}
+
+.categoria__btn:visited {
+    color: #000000;
+}
+
+.categoria__btn:hover {
+    scale: 1.2;
+    background-color: #ffffff;
+    font-weight: 600;
+}
+
+.categoria__icon-btn {
+    color: #000000;
+    margin-left: 5%;
+}
 /* ---------------------------------------------------------FIN---CATEGORIAS------------------------------------------------------------------------------------------- */
 
-/* ---------------------------------------------------------------CAJA PENULTIMA-------------------------------------------------------------------------------------------------------- */
-.caja-penultima {
+/* ---------------------------------------------------------------ESLOGAN-------------------------------------------------------------------------------------------------------- */
+.eslogan {
     display: flex;
     flex-direction: row;
     width: 80%;
     height: 5%;
     border-style: solid;
+    border-width: 1px;
     margin: 0;
     margin-top: 4%;
     margin-left: 10%;
+    justify-content: center;
 }
 
-.caja-final {
+.eslogan__frase {
+    display: flex;
+    align-items: center;
+    color: #797979;
+    
+}
+
+
+
+.footer-expandible {
     display: flex;
     flex-direction: row;
     width: 99.5%;
@@ -604,7 +724,7 @@ hr {
     margin: 0;
     margin-top: 4%;
 }
-/* ---------------------------------------------------------FIN---CAJA PENULTIMA-------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------FIN----------------------------------------------------------------------------------------------------------- */
 
 
 /*-----------------------------------------------------------FRASES-------------------------------------------------------*/

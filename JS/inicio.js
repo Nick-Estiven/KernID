@@ -4,7 +4,7 @@
 
 // 1. EL ALMACÉN: Tus frases contundentes cortas
 const listaFrases = [
-    "INVESTIGA ARMAMENTOS MODERNOS",
+    "EXPERIMENTA Y APRENDE",
     "INVESTIGACIÓN RIGUROSA",
     "EXPLORA EL ARSENAL GLOBAL",
     "PON A PRUEBA TU CONOCIMIENTO"
