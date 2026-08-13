@@ -704,6 +704,7 @@ hr {
     margin-top: 4%;
     margin-left: 10%;
     justify-content: center;
+    gap: 10px;
 }
 
 .eslogan__frase {
@@ -713,7 +714,39 @@ hr {
     
 }
 
+.eslogan__frase--principal {
+    color: #ffffff;
+}
 
+.eslogan__icon--principal {
+    color: #ffffff !important;
+    align-self: center;
+}
+
+@keyframes eslogan-parpadeo {
+    0%, 100% {
+        opacity: 1;
+        
+    }
+
+    50% {
+        opacity: 0.5;
+        filter: drop-shadow(0px 0px 10px rgba(255, 0, 0, 0.467));
+    }
+}
+
+.eslogan__frase--principal {
+    animation: eslogan-parpadeo 2s infinite ease-in-out;
+}
+
+.eslogan__icon {
+    animation: eslogan-parpadeo 2s infinite ease-in-out;
+}
+
+.eslogan__icon {
+    align-self: center;
+    color: #c2c2c2;
+}
 
 .footer-expandible {
     display: flex;
