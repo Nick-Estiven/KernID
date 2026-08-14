@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!menu2) return;
 
     // Define cuántos píxeles quieres que baje/se separe la caja al inicio
-    const distanciaInicial = 50; 
+    const distanciaInicial = 30; 
 
     function actualizarMenu() {
         let scrollY = window.scrollY;

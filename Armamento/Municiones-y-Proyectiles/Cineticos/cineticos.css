@@ -25,7 +25,7 @@ body{
     display: flex;
     flex-direction: row;
     position: fixed;
-    background-color: #0b0b0e; /* Color de fondo obligatorio para que no sea transparente */
+    background-color: #0b0b0eed; /* Color de fondo obligatorio para que no sea transparente */
     border-style: solid;
     border-color: #c4c4c4;
     border-top: #000000;
@@ -38,7 +38,7 @@ body{
     top: 60px;
     width: 80%;
     height: 6%;
-    background-color: #0b0b0e;
+    background-color: #0b0b0ee3;
     border: 1px solid #c4c4c4;
     /* Propiedades clave para centrar tu caja del 80% con position fixed */
     left: 0;
@@ -239,35 +239,27 @@ body{
     height: 5%;
 }
 
-
-
-
-.relleno {
-    width: 100%;
-    height: 35%;
-}
-
-.recomendacion {
+.menu-2__recommendation {
     display: flex;
     height: 10%;
     gap: 10px;
 }
 
-.recomendacion h2 {
+.menu-2__recommendation h2 {
     font-weight: 350;
     font-size: 1rem;
     margin-top: 1.2%;
     letter-spacing: 2px;
 }
 
-.icon-recomendacion {
+.menu-2__icon-recommendation {
     display: flex;
     margin-top: 1.1%;
     margin-left: 2%;
     color: #ffffff !important;
 }
 
-.tipos-de-armamento {
+.menu-2__btns {
     display: flex;
     flex-direction: row;
     width: 75%;
@@ -279,7 +271,7 @@ body{
 
 }
 
-.proyectiles {
+.menu-2__btn {
     display: flex;
     border-style: solid;
     align-items: center;
@@ -287,170 +279,189 @@ body{
     height: 30%;
     border-width: 1px;
     background-color: #000000;
-    color: #939393;
+    color: #fbf8f8;
     padding: 10px;
     margin-top: 0.5%;
     gap: 10px;
+    transition: all 0.2s ease-in-out;
 }
 
-.proyectiles h3 {
+.menu-2__btn--asset {
+    background-color: #ffffff !important;
+}
+
+.menu-2__icon--inactive {
+    color: #ffffff;
+}
+
+.menu-2__icon--asset {
+    color: #000000;
+}
+
+.menu-2__btn--asset h3 {
+    color: #000000;
+}
+
+.menu-2__btn h3 {
     align-self: center;
     font-weight: 350;
     font-size: 0.8rem;
 }
 
-.misiles {
-    display: flex;
-    border-style: solid;
-    align-self: center;
-    align-items: center;
-    height: 30%;
-    border-width: 1px;
-    background-color: #000000;
-    color: #939393;
-    padding: 10px;
-    margin-top: 0.5%;
-    gap: 10px;
+.menu-2__btn:hover {
+    scale: 1.1;
+    background-color: rgba(78, 97, 97, 0.741);
 }
 
-.misiles h3 {
-    align-self: center;
-    font-weight: 350;
-    font-size: 0.8rem;
+.relleno {
+    width: 100%;
+    height: 23%;
 }
 
-.cohetes {
-    display: flex;
-    border-style: solid;
-    align-self: center;
-    align-items: center;
-    height: 30%;
-    border-width: 1px;
-    background-color: #000000;
-    color: #939393;
-    padding: 10px;
-    margin-top: 0.5%;
-    gap: 10px;
-}
-
-.cohetes h3 {
-    align-self: center;
-    font-weight: 350;
-    font-size: 0.8rem;
-}
-
-.bombas {
-    display: flex;
-    border-style: solid;
-    align-self: center;
-    align-items: center;
-    height: 30%;
-    border-width: 1px;
-    background-color: #000000;
-    color: #939393;
-    padding: 10px;
-    margin-top: 0.5%;
-    gap: 10px;
-}
-
-.bombas h3 {
-    align-self: center;
-    font-weight: 350;
-    font-size: 0.8rem;
-}
-
-.subacuaticos {
-    display: flex;
-    border-style: solid;
-    align-self: center;
-    align-items: center;
-    height: 30%;
-    border-width: 1px;
-    background-color: #000000;
-    color: #939393;
-    padding: 10px;
-    margin-top: 0.5%;
-    gap: 10px;
-}
-
-.subacuaticos h3 {
-    align-self: center;
-    font-weight: 350;
-    font-size: 0.8rem;
-}
-
-.prototipos {
-    display: flex;
-    border-style: solid;
-    align-self: center;
-    align-items: center;
-    height: 30%;
-    border-width: 1px;
-    background-color: #000000;
-    color: #939393;
-    padding: 10px;
-    margin-top: 0.5%;
-    gap: 10px;
-}
-
-.prototipos h3 {
-    align-self: center;
-    font-weight: 350;
-    font-size: 0.8rem;
-}
-
-.cineticos-img-resumen {
+.cineticos__img-summary {
     display: flex;
     flex-direction: row;
     align-self: center;
     justify-self: center;
     width: 80%;
-    height: 100%;
-    gap: 100px;
-    border-style: solid;
-}
-
-.cineticos-img {
-    background-image: url(../../../imagenes/Armamento/Proyectiles/Cineticos/APFSDS-URSS.jpg);
-    background-size: cover;
-    width: 28%;
-    display: flex;
     height: 80%;
-    margin-top: 5.5%;
-    border-radius: 7px;
-    flex-direction: column;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #797979;
+    background-image: url(../../../imagenes/Fondos/fondo-puntos-blancos-intermedios.png);
 }
 
-.cineticos-img p {
+.cineticos__statistics-img {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: #797979;
+    border-width: 1px;
+    width: 30%;
+    height: 81%;
+    z-index: 3;
+    background-color: #000000;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.cineticos__statistics {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #797979;
+    width: 90%;
     margin: 0;
-    padding-left: 15px;
-    padding-top: 7px;
-    letter-spacing: 3px;
-    font-weight: 150;
-    font-size: 0.7rem;
+    margin-left: 4%;
+    margin-top: 3%;
+
+}
+
+.cineticos__statistics p {
+    margin: 0;
+    margin-top: 1%;
+    margin-left: 2%;
+    font-weight: 100;
+    font-size: 0.8rem;
+}
+
+.cineticos__img {
+    display: flex;
+    width: 57%;
+    margin-left: 20%;
+    margin-top: 3%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c4c4c4;
+}
+
+.cineticos__hr {
+    display: flex;
+    width: 98%;
+    margin-bottom: 1%;
+    opacity: 0.5;
+}
+
+.cineticos__credit {
+    display: flex;
+    font-size: 0.9rem;
+    gap: 2%;
+    margin: 0;
+}
+
+.cineticos__icon-credit {
+    color: #ffffff;
+    font-size: 1.2rem !important;
 }
 
 .cineticos-resumen {
-    width: 70%;
+    width: 56%;
+    height: 80%;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    font-size: 1rem;
-    letter-spacing: 4px;
-    font-weight: 200;
-    background-color: rgba(0, 0, 0, 0.568);
-    border-radius: 8px;
-    margin-top: 5.5%;
+    font-weight: 400;
+    font-size: 0.86rem;
     line-height: 1.5;
-    padding: 30px;
-    
+    margin-left: 5%;
+    align-self: center;
+    padding-left: 2%;
 }
 
 .cineticos-resumen h2 {
+    display: flex;
     font-size: 3rem;
     margin-bottom: 0;
     font-weight: 300;
     margin-top: 0;
+}
+
+.cineticos-resumen p {
+    border-style: solid;
+    border-right: #000000;
+    border-top: #000000;
+    border-bottom: #000000;
+    border-width: 1px;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #000000b5;
+}
+
+.cineticos__recomendacion {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8rem;
+    gap: 5%;
+}
+
+.cineticos__opcional {
+    font-weight: 200;
+    font-size: 0.8rem;
+}
+
+.cineticos__lista {
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #ffffff;
+    height: 70%;
+    margin-top: 1.5%;
+}
+
+.cineticos__lista-text {
+    text-align: center;
+    color: #000000;
+    margin: 0;
+}
+
+.cineticos__lista-icon {
+    display: flex;
+    align-self: center;
+    color: #000000;
+    font-size: 2rem !important;
 }
 
 .subtitulo-1 {
