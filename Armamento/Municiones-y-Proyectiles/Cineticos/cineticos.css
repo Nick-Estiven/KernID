@@ -256,6 +256,7 @@ body{
     display: flex;
     margin-top: 1.1%;
     margin-left: 2%;
+    font-size: 3vh;
     color: #ffffff !important;
 }
 
@@ -278,6 +279,7 @@ body{
     align-self: center;
     height: 30%;
     border-width: 1px;
+    border-color: #939393;
     background-color: #000000;
     color: #fbf8f8;
     padding: 10px;
@@ -287,11 +289,37 @@ body{
 }
 
 .menu-2__btn--asset {
-    background-color: #ffffff !important;
+    background-color: #00eeff !important;
+    border-color: #00eeff !important;
+    box-shadow: 0 0px 10px rgb(0, 229, 255);
+    font-variation-settings: 'wght' 200;    
 }
 
 .menu-2__icon--inactive {
     color: #ffffff;
+    font-size: 2.5vh;
+    font-variation-settings: 'wght' 250;
+    
+}
+
+.menu-2__icon--inactive-yellow {
+    color: rgb(255, 255, 0);
+}
+
+.menu-2__icon--inactive-red {
+    color: rgb(255, 35, 35);
+}
+
+.menu-2__icon--inactive-blue {
+    color: rgb(92, 92, 255);
+}
+
+.menu-2__icon--inactive-lightblue {
+    color: lightblue;
+}
+
+.menu-2__icon--inactive-green {
+    color: green;
 }
 
 .menu-2__icon--asset {
@@ -466,7 +494,6 @@ body{
 
 .proyectiles {
     display: flex;
-    border-style: solid;
     width: 80%;
     height: auto;
     margin: 0;
@@ -489,8 +516,6 @@ body{
 .proyectiles__right {
     display: flex;
     flex-direction: column;
-    border-style: solid;
-    border-width: 1px;
     width: 75%;
     height: 200vh;
     gap: 1%;
@@ -501,15 +526,41 @@ body{
     position: sticky;
     top: 10%;
     flex-direction: row;
-    height: 5vh;
+    height: 4.5vh;
     width: 100%;
+    background-color: #ffffff;
 }
 
 .proyectiles__redireccion--btn {
     display: flex;
-    border-style: solid;
+    border-style: dashed;
+    border-color: #000000;
+    justify-content: center;
+    border-width: 1px;
     width: 100%;
     height: 100%;
+    gap: 7%;
+}
+
+.proyectiles__redireccion--icon {
+    display: flex;
+    color: #000000;
+    align-self: center;
+    font-size: 2.5vh;
+    
+}
+
+.proyectiles__redireccion--icon-i {
+    display: flex;
+    color: #000000;
+    align-self: center;
+    font-size: 4vh;
+}
+
+.proyectiles__redireccion p {
+    display: flex;
+    align-self: center;
+    color: #000000;
 }
 
 .proyectiles__titulo-1 {
