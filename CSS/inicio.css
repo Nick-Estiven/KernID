@@ -24,9 +24,10 @@ body{
     display: flex;
     flex-direction: row;
     position: fixed;
-    background-color: #0b0b0e; /* Color de fondo obligatorio para que no sea transparente */
+    background-image: url(../imagenes/Fondos/fonodo-azul-transparencia.jpg);
+    background-size: cover;
     border-style: solid;
-    border-color: #64646493;
+    border-color: #1f299345;
     border-top: #000000;
     border-left: #000000;
     border-width: 1px;
@@ -254,13 +255,13 @@ body{
     height: 2%;
     background-color: #000000;
     border-style: solid;
-    border-color: #00e5ff69;
+    border-color: #00e5ff31;
     border-width: 1px;
     align-items: center;
     padding: 7px;
     margin-top: 2%;
     margin-left: 5%;
-    box-shadow: 0 0px 10px rgba(0, 229, 255, 0.42);
+    box-shadow: 0 0px 10px rgba(0, 229, 255, 0.186);
 }
 
 .home__element-1-h2 {
@@ -270,7 +271,7 @@ body{
     font-weight: 200;
     letter-spacing: 2px;
     margin-top: 3%;
-    color: #00e5ff;
+    color: #00e5ffae;
 }
 
 .home__icon-element-1 {
@@ -347,22 +348,32 @@ body{
 
 .home__btn--quiz {
     border-color: rgba(255, 157, 0, 0.6);
-    box-shadow: 0 0px 10px rgba(252, 152, 1, 0.5);
+    box-shadow: 0 0px 10px rgba(252, 152, 1, 0.378);
     background-color: #f9740009;
 }
 
-.home__btn:hover {
+.home__btn--quiz:hover {
     scale: 1.1;
-    background-color: #ffffff;
-    color: #000000;
+    border-color: #ffea03;
 }
 
-.home__btn:hover .home__btn--icon {
-    color: #000000;
+.home__btn--classification:hover {
+    scale: 1.1;
+    border-color: #03ffe2;
+    color:#18dffefb !important;
+    background-color: #00636e5e;
 }
 
 .home__btn--classification {
     width: 40% !important;
+    background-color: #000d2c70;
+    border-color: #0084ff80;
+    box-shadow: 0 0px 10px rgba(1, 80, 252, 0.204);
+    color: #acf7ffcf;
+}
+
+.home__btn--icon-clasificacion {
+    color:#18c1fed0 !important;
 }
 
 .home__btn--text {
@@ -397,6 +408,7 @@ body{
     background-color: #ffffff;
     margin-top: 4%;
     transition: all 0.7s ease-in-out;   
+    box-shadow: 0 0px 10px rgba(255, 255, 255, 0.445);
 }
 
 .home__btn--simulation:hover {
@@ -568,7 +580,7 @@ hr {
     width: 100%;
     height: 100%;
     /* Sombra interior o degradado de viñeta */
-    box-shadow: inset 0px 0px 700px rgba(5, 24, 48, 0.561); 
+    box-shadow: inset 0px 0px 700px rgba(0, 16, 35, 0.961); 
     pointer-events: none;   /* Crucial: permite que los clics y el cursor atraviesen esa capa y lleguen directamente a lo que esté debajo o dentro. */
     transition: all 0.4s ease-in-out;
 }
@@ -605,11 +617,12 @@ hr {
     font-size: 0.9rem;
     border-style: solid;
     border-width: 1px;
-    border-color: #939393;
-    background-color: #000000aa;
-    filter: opacity(0.5);
+    border-color: #ffffff;
+    background-color: #020202cb;
+    filter: opacity(0.8);
     padding-left: 1%;
     padding-right: 1%;
+    color: #dcedff;
 }
 
 .categoria__icon {
@@ -626,7 +639,7 @@ hr {
     z-index: 2;
     margin-top: 10%;
     margin-left: 3%;
-    margin-top: 8%;
+    margin-top: 9%;
     
 }
 
@@ -653,7 +666,7 @@ hr {
     width: 90%;
     z-index: 2;
     margin: 0;
-    margin-top: 16%;
+    margin-top: 19%;
     margin-left: 5%;
     font-size: 0.7rem;
     color: #fefdfdd9;

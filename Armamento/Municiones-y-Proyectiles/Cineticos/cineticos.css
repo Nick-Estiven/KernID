@@ -25,9 +25,10 @@ body{
     display: flex;
     flex-direction: row;
     position: fixed;
-    background-color: #0b0b0eed; /* Color de fondo obligatorio para que no sea transparente */
+    background-image: url(../../../imagenes/Fondos/fonodo-azul-transparencia.jpg);
+    background-size: cover;
     border-style: solid;
-    border-color: #c4c4c4;
+    border-color: #1f299345;
     border-top: #000000;
     border-left: #000000;
     border-width: 1px;
@@ -38,7 +39,7 @@ body{
     top: 60px;
     width: 80%;
     height: 6%;
-    background-color: #0b0b0ee3;
+    background-image: url(../../../imagenes/Fondos/Fondo-inicio.png);
     border: 1px solid #c4c4c4;
     /* Propiedades clave para centrar tu caja del 80% con position fixed */
     left: 0;
