@@ -1,5 +1,5 @@
 
-body{
+body {
     background-color: black;
     color: rgb(255, 255, 255);    
     display: flex;
@@ -14,13 +14,12 @@ body{
 .menus {
     z-index: 1000;
     height: 8%;
-
 }
 
 /* IMPORTANTE: Los menús internos DEBEN fluir de manera normal (sin position: fixed) */
 .menu {
     width: 100%;
-    height: 60px; /* Ajusta a tu altura real */
+    height: 9%;
     display: flex;
     flex-direction: row;
     position: fixed;
@@ -37,23 +36,24 @@ body{
 .logo-nombre {
     display: flex;
     align-items: center;
-    gap: 12px;
-    width: 20%;
+    gap: 10%;
+    width: 14vw;
+    border-style: solid;
+    
 }
 
 .logo {
     height: clamp(15px, 2.3vw, 85px);
     width: auto;
     margin-right: 0;
-    padding-left: 30%;
     filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 1));
 }
 
 .nombre-descripcion {
     display: flex;
     flex-direction: column;
-    gap: 0;
     margin: 0;
+    width: 100%;
 }
 
 .nombre {
@@ -94,7 +94,7 @@ body{
     align-items: center;
     height: 30%;
     margin-top: 18px;
-    margin-left: 2%;
+    margin-left: 1%;
     transition: all 1s ease-in-out;
 }
 
@@ -128,8 +128,6 @@ body{
     display: flex;
     width: 50%;
     padding-left: 1%;
-    gap: 5px;
-
 }
 
 .menu-right a {
@@ -181,8 +179,8 @@ body{
     border-style: solid;
     border-width: 1px;
     border-color: #939393;
-    gap: 10px;
-    width: 33%;
+    gap: 3.5%;
+    width: 35.9%;
     align-items: center;
     box-shadow: 0 0px 3px rgb(157, 248, 254);
 }
@@ -193,7 +191,7 @@ body{
     border-width: 1px;
     border-color: rgb(255, 157, 0);
     background-color: #f974002a;
-    gap: 10px;
+    gap: 8%;
     align-items: center;
     box-shadow: 0 0px 10px rgb(252, 152, 1);
 }
@@ -207,7 +205,7 @@ body{
     color: #0b0b0e !important;
     background-color: white;
     font-weight: 500 !important;
-    gap: 10px;
+    gap: 10%;
     align-items: center;
     box-shadow: 0 0px 8px rgb(255, 255, 255);
 }
