@@ -1,286 +1,42 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/inicio.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<meta charset="UTF-8">
+<title>Kern!D - Intro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-25..200" />
+  <link rel="stylesheet" href="CSS/inicio.css">
 </head>
+<body>
 
-<body> 
+    <div class="intro" id="intro">
+        <!-- Este SVG empieza vacío -- JS le va a inyectar y mover los <path> -->
+        <svg id="canvasHilos" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice"></svg>
 
-    <div class="menus"><!--=============================================================MENU=======================================================================-->
-      <nav class="menu">    
-        <div class="logo-nombre">
-            <img src="imagenes/Globales/Logo.png" alt="KernID" class="logo">
-          <div class="nombre-descripcion">  
-            <p class="nombre">Kern!D</p>
-            <h4 class="descripcion">Enciclopedia Militar :D</h4>
-          </div>  
-        </div>
-      
-        <form class="search-box">
-               <input type="search"  class="search-bar" placeholder="Buscar temas..." aria-label="Buscar">
-                <div class="lupa">
-                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                   <circle cx="11" cy="11" r="8"></circle>
-                   <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                 </svg>
-                 </div>
-        </form>
-        
-        <div class="menu-right">
-            <a class="inicio-card-menu" href="inicio.html"><p>Inicio</p></a>
-            <a class="img-ref" href="">
-              <span class="material-symbols-outlined menu-right__icon">photo</span>Imágenes de Referencia
-            </a>
-            <a class="quiz" href="">
-            <span class="material-symbols-outlined icon-quiz">school</span><p>Quiz</p>
-            </a>
-            <a class="iniciar-sesion" href=""><span class="material-symbols-outlined icon-sesion">family_group</span>Iniciar Sesión
-            </a>
-        </div>    
-     </nav>
-
-    </div> 
-<!--======================================================================================MENU======================================================================-->
-
-
-<!--===============================================================================FRASES ROTATIVAS=================================================================-->
-    <div class="bienvenida-container">
-        <!--El id="textoDinamico" es obligatorio para conectar con el script -->
-        <h1 id="textoDinamico" class="frase-carrusel">SIMULA DISPAROS</h1>
-    </div>
-<!--==============================================================================FRASES ROTATIVAS==================================================================-->
-    
-
-<!--=====================================================================================HOME=====================================================================-->
-<div class="home">
-    <div class="home__left">
-        <div class="home__element-1">
-            <h2 class="home__element-1-h2">
-            <span class="material-symbols-outlined home__icon-element-1">account_balance</span>
-            <span style="word-spacing: 10px;">KERN!D: ENCICLOPEDIA MILITAR</span>
-            </h2>
-        </div>
-  
-        <h1 class="home__tittle"><spam style="word-spacing: 5px;">INVESTIGACIÓN RÁPIDA E INTERACTIVIDAD INTUITIVA</spam></h1>        
-    
-        <p class="home__summary">¡Indaga sobre armamento, balistica, tipos de vehiculos, tecnologia militar y más!. Informacion detallada y facil de entender. ¡Experimenta, disfruta y demuestra tus conociminetos frente al mundo!.</p>
-
-      <div class="home__btns">  
-        <div class="home__btn home__btn--quiz">
-            <p class="home__btn--text"><span class="material-symbols-outlined home__btn--icon home__btn--icon-quiz">school</span><span style="word-spacing: 10px;">Iniciar Quiz</span></p>
+        <div class="intro__logo">
+            <span>K</span><span>!</span>
         </div>
 
-        <div class="home__btn home__btn--classification">
-            <p class="home__btn--text home__btn--text-2"><span class="material-symbols-outlined home__btn--icon home__btn--icon-clasificacion">rewarded_ads</span><span style="word-spacing: 10px;">Ver Tabla De Clasificación</span></p>
-        </div>
-      </div>
-
-        <div class="home__btn--simulation">
-            <p class="home__text--simulation"><span class="material-symbols-outlined home__btn--icon-simulation">view_in_ar</span><span style="word-spacing: 10px;">Abrir Simulador De Penetración 3D</span></p>
-        </div>
+        <div class="intro__nombre">KERN!D</div>
     </div>
 
-    <div class="home__right">
-            <div class="ultimas-actualizaciones-icon-titulo">
-            <p class="ultimas-actualizaciones-titulo"><span class="material-symbols-outlined icon-ultimas-actualizaciones">deployed_code_update</span><span style="word-spacing: 15px;">ULTIMAS ACTUALIZACIONES</span>
-            </p>
+    <div class="contenido">
+        <nav class="barra-superior">
+            <div class="barra-superior__data">
+                <span class="material-symbols-outlined barra-superior__icon">data_exploration</span>
+                <h2><span style="word-spacing: 50%;">KERN!D // ESTADO & DATOS</span></h2>
             </div>
-            <div class="ultimas-actualizaciones">
-                <div class="ultimas-actualizaciones-l">
-                    <div class="actualizacion-1">
 
-                    </div>
-
-                    <div class="actualizacion-2">
-                        
-                    </div>
-                </div>
-
-                <div class="ultimas-actualizaciones-r">
-                    <div class="actualizacion-3">
-
-                    </div>
-
-                    <div class="actualizacion-4">
-                        
-                    </div>
-                </div>
-
+            <div class="barra-superior__personalization">
+                <span class="material-symbols-outlined barra-superior__icon">palette</span>
+                <h2>Personalizar entorno</h2>
             </div>
-    </div>
-</div>
-<!--===============================================================================END===HOME=====================================================================-->
 
-<hr>
-<!--==============================================================================CATEGORY========================================================================-->
-<div class="categorias">
-    <div class="categorias__filas">
-        <div class="categoria categoria--armamento">
-            <video autoplay muted loop playsinline class="categoria__portada">
-                <source src="imagenes/Armamento/categoria-armamento.mp4" type="video/mp4">
-            </video>
-
-          <div class="categoria__numero-icon">
-            <p class="categoria__numero">Categoria 1</p>
-            <span class="material-symbols-outlined categoria__icon">target</span>
-          </div>
-
-          <div class="categoria__icon-tittle">
-            <h2 class="categoria__tittle"><span class="material-symbols-outlined categoria__icon-right">play_arrow</span>ARMAMENTO</h2>
-          </div>
-
-          <p class="categoria__resumen">Aprende sobre todo tipo de armamento militar. ¡AP, Misiles, Torpedos y más. !Experimenta con simuladores 2D de penetracion realistas!.</p>
-          
-          <hr class="categoria__hr">
-          <a class="categoria__btn" href="Armamento/Municiones-y-Proyectiles/Cineticos/cineticos.html"><span style="word-spacing: 50%;">EXPLORAR ARMAMENTO </span><span class="material-symbols-outlined categoria__icon-btn"> keyboard_double_arrow_right</span></a>
-        </div>
-
-        <div class="categoria categoria--terrestres">
-            <video autoplay muted loop playsinline class="categoria__portada">
-                <source src="imagenes/Terrestres/categoria-terrestres.mp4" type="video/mp4">
-            </video>
-
-            <div class="categoria__numero-icon">
-            <p class="categoria__numero">Categoria 2</p>
-            <span class="material-symbols-outlined categoria__icon">auto_towing</span>
-          </div>
-
-          <div class="categoria__icon-tittle">
-            <h2 class="categoria__tittle"><span class="material-symbols-outlined categoria__icon-right">play_arrow</span>V. TERRESTRES</h2>
-          </div>
-
-          <p class="categoria__resumen">Investiga vehículos terrestres: MBT, IFV, APC, Artilleria y más. ¡Experimenta como funciona cada mecanismo con simuladores y más!.</p>
-
-          <hr class="categoria__hr">
-          <a class="categoria__btn" href="Armamento/Municiones-y-Proyectiles/Cineticos/cineticos.html"><span style="word-spacing: 50%;">EXPLORAR VEHICULOS TERRESTRES </span><span class="material-symbols-outlined categoria__icon-btn"> keyboard_double_arrow_right</span></a>
-        </div>
-
-        <div class="categoria categoria--aereos">
-            <video autoplay muted loop playsinline class="categoria__portada">
-                <source src="imagenes/Aereos/categoria-aereos.mp4" type="video/mp4">
-            </video>
-
-            <div class="categoria__numero-icon">
-            <p class="categoria__numero">Categoria 3</p>
-            <span class="material-symbols-outlined categoria__icon">plane_contrails</span>
-          </div>
-
-          <div class="categoria__icon-tittle">
-            <h2 class="categoria__tittle"><span class="material-symbols-outlined categoria__icon-right">play_arrow</span>V. AÉREOS</h2>
-          </div>
-
-          <p class="categoria__resumen">Indaga vehículos aéreos, Cazas, Bombarderos y más. ¡Ivestiga como funciona su armamento y más cosas dinámicas!</p>
-
-          <hr class="categoria__hr">
-          <a class="categoria__btn" href="Armamento/Municiones-y-Proyectiles/Cineticos/cineticos.html"><span style="word-spacing: 50%;">EXPLORAR VEHICULOS AEREOS </span><span class="material-symbols-outlined categoria__icon-btn"> keyboard_double_arrow_right</span></a>
-        </div>
+        </nav>
     </div>
 
-    <div class="categorias__filas">
-        <div class="categoria categoria--navales">
-            <video autoplay muted loop playsinline class="categoria__portada">
-                <source src="imagenes/Navales/categoria-navales.mp4" type="video/mp4">
-            </video>
-
-            <div class="categoria__numero-icon">
-            <p class="categoria__numero">Categoria 4</p>
-            <span class="material-symbols-outlined categoria__icon">directions_boat</span>
-          </div>
-
-          <div class="categoria__icon-tittle">
-            <h2 class="categoria__tittle"><span class="material-symbols-outlined categoria__icon-right">play_arrow</span>V. NAVALES</h2>
-          </div>
-
-          <p class="categoria__resumen">Aprende sobre vehículos navales, Acorazados, Submarinos, Porta aviones y más. ¡Simula el funcionamineto de sus mecanismos y disfruta!</p>
-
-          <hr class="categoria__hr">
-          <a class="categoria__btn" href="Armamento/Municiones-y-Proyectiles/Cineticos/cineticos.html"><span style="word-spacing: 50%;">EXPLORAR VEHICULOS NAVALES </span><span class="material-symbols-outlined categoria__icon-btn"> keyboard_double_arrow_right</span></a>
-        </div>
-
-        <div class="categoria categoria--proteccion">
-            <video autoplay muted loop playsinline class="categoria__portada">
-                <source src="imagenes/sistemas-de-proteccion/categoria-proteccion.mp4" type="video/mp4">
-            </video>
-
-            <div class="categoria__numero-icon">
-            <p class="categoria__numero">Categoria 5</p>
-            <span class="material-symbols-outlined categoria__icon">shield_radar</span>
-          </div>
-
-          <div class="categoria__icon-tittle">
-            <h2 class="categoria__tittle"><span class="material-symbols-outlined categoria__icon-right">play_arrow</span>SISTEMAS DE PROTECCIÓN</h2>
-          </div>
-          
-          <p class="categoria__resumen">Investiga sobre los sistemas de protección que utilizan muchos vehiculos modernos o paises para defenderse. ¡Indaga como funcionan!</p>
-
-          <hr class="categoria__hr">
-          <a class="categoria__btn" href="Armamento/Municiones-y-Proyectiles/Cineticos/cineticos.html"><span style="word-spacing: 50%;">EXPLORAR SISTEMAS DE PROTECCION </span><span class="material-symbols-outlined categoria__icon-btn"> keyboard_double_arrow_right</span></a>
-        </div>
-
-        <div class="categoria categoria--mecanismos">
-            <video autoplay muted loop playsinline class="categoria__portada">
-                <source src="imagenes/ingenieria/categoria-ingenieria.mp4" type="video/mp4">
-            </video>
-
-            <div class="categoria__numero-icon">
-            <p class="categoria__numero">Categoria 6</p>
-            <span class="material-symbols-outlined categoria__icon">precision_manufacturing</span>
-          </div>
-
-          <div class="categoria__icon-tittle">
-            <h2 class="categoria__tittle"><span class="material-symbols-outlined categoria__icon-right">play_arrow</span>MECANISMOS</h2>
-          </div>
-
-          <p class="categoria__resumen">¡Experimenta y analiza como funcionan muchos de lo sistemas militares sean antiguos o modernos!.</p>
-
-          <hr class="categoria__hr">
-          <a class="categoria__btn" href="Armamento/Municiones-y-Proyectiles/Cineticos/cineticos.html"><span style="word-spacing: 50%;">EXPLORAR MECANISMOS </span><span class="material-symbols-outlined categoria__icon-btn"> keyboard_double_arrow_right</span></a>
-        </div>
-    </div>
-</div>
-
-<div class="eslogan">
-    <span class="material-symbols-outlined eslogan__icon eslogan__icon--principal">category_search</span>
-    <p class="eslogan__frase eslogan__frase--principal">INVESTIGACION RIGUROSA</p>
-    <span class="material-symbols-outlined eslogan__icon">arrow_right</span>    
-    <p class="eslogan__frase">EXPLORA EL ARSENAL GLOBAL</p>
-    <span class="material-symbols-outlined eslogan__icon">arrow_right</span>
-    <p class="eslogan__frase">EXPERIMENTA Y APRENDE</p>
-    <span class="material-symbols-outlined eslogan__icon">arrow_right</span>
-    <p class="eslogan__frase">PON A PRUEBA TU CONOCIMIENTO</p>
-    <span class="material-symbols-outlined eslogan__icon">arrow_right</span>
-    <p class="eslogan__frase">SIMULA DISPAROS</p>
-</div>
-     
-<div class="footer">
-    <div class="footer__"
-    
-</div>
-
-
-<div class="music-widget">
-    
-    <!-- EL BOTÓN VISUAL -->
-    <button type="button" id="toggleMusic" class="btn-music">🎵</button>  <!--base invisible-->
-                                                        <!--Texto-->       <!-- class para CSS e id para JS-->
-                                                                           <!--background: transparent;  y  border: none; 
-                                                                           qutan el diseño default del navegador-->
-    
-    <audio id="audioFondo" loop>                                           <!--audio daaaaa-->
-        <source src="audio/iFeel.mp3" type="audio/mpeg">                <!--la musiquita-->
-    </audio>
-
-</div>
-
-
-<script src="global.js"></script>  
 <script src="JS/inicio.js"></script>
 </body>
 </html>

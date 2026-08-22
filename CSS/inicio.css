@@ -1,873 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    background-color: black;
-    color: rgb(255, 255, 255);    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
-    margin: 0;
+    background-color: #000000;
     font-family: "Exo 2", Helvetica, sans-serif;
-}   
-
-/* La caja madre que envuelve a ambos menús */
-.menus {
-    z-index: 1000;
-    height: 8%;
-}
-
-/* IMPORTANTE: Los menús internos DEBEN fluir de manera normal (sin position: fixed) */
-.menu {
-    width: 100%;
-    height: 9%;
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    background-image: url(../imagenes/Fondos/fonodo-azul-transparencia.jpg);
-    background-size: cover;
-    border-style: solid;
-    border-color: #1f299345;
-    border-top: #000000;
-    border-left: #000000;
-    border-width: 1px;
-}
-
-
-.logo-nombre {
-    display: flex;
-    align-items: center;
-    gap: 10%;
-    width: 14vw;
-    border-style: solid;
-    
-}
-
-.logo {
-    height: clamp(15px, 2.3vw, 85px);
-    width: auto;
-    margin-right: 0;
-    filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 1));
-}
-
-.nombre-descripcion {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    width: 100%;
-}
-
-.nombre {
-    margin: 0;
-    font-size: 1.5rem;
-    padding-left: 4%;
-    color: rgb(252, 252, 252);
-    filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 1));
-    font-weight: 200;
-}
-
-.descripcion {
-    display: flex;
-    margin: 0;
-    font-weight: 100;
-    padding-left: 4%;
-    width: 100%;
-    font-size: 0.8rem;
-    padding-bottom: 7%;
-
-}
-
-.search-box {
-    display: flex;
-     background: rgba(255, 255, 255, 0.12);
-    border: 1px solid rgba(148, 236, 254, 0.297);
-     padding: 4px 10px;
-    /* LA MAGIA EFICIENTE: Le dice al buscador que use el espacio del centro 
-       y que tenga un tamaño máximo controlado en PC para que no se deforme */
-    flex-grow: 1;  
-    transition: all 0.3s ease;
-    position: relative;
-    width: 100%;
-    max-width: 30%;
-    background-color: #bcfbfb1e;
-    border-radius: 1.2vh; /* Bordes redondeados */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    align-items: center;
-    height: 30%;
-    margin-top: 18px;
-    margin-left: 1%;
-    transition: all 1s ease-in-out;
-}
-
-.lupa {
-    display: flex;
-    position: absolute;
-    color: #466f81;
-}
-
-.search-bar {
-    width: 100%;
-    padding: 15px 25px;
-    background: transparent;
-    border: none; /* Elimina el borde por defecto */
-    outline: none; /* Elimina el borde de enfoque por defecto */
-    font-size: 16px;
-    color: #faf7f7;
-}
-
-/* Efecto visual al hacer clic en el buscador */
-.search-box:focus-within {
-    box-shadow: 0 4px 20px rgba(0, 123, 255, 0.384);
-}
-
-.search-box:hover {
-    transform: scale(1.03);
-    box-shadow: 0 4px 20px rgba(0, 123, 255, 0.384);
-}
-
-.menu-right {
-    display: flex;
-    width: 50%;
-    padding-left: 1%;
-}
-
-.menu-right a {
-    font-size: 0.8rem;
-    margin-right: 0;
-    margin-left: 2%;
-    transition: all 0.4s ease-in-out;
-    text-decoration-line: none;
     color: white;
-    letter-spacing: 3px;
-    font-weight: 500;
-    height: 30%;
-    padding: 7px;
-    margin-top: 2%;
-}
-
-.menu-right a:visited {
-    color: white;
-}
-
-.menu-right a:hover {
-    transform: scale(1.1);
-}
-
-.menu-right p:hover {
-    transform: scale(1.1);
-}
-
-.inicio-card-menu {
-    display: flex;
-    align-items: center;
-    border-style: solid;
-    background-color: #ffffff;
-    height: 22% !important;
-    box-shadow: 0 0px 8px rgba(251, 251, 251, 0.96);
-}
-
-.inicio-card-menu p {
-    color: #000000;
-    font-weight: 550;
-}
-
-.menu-right__icon {
-    color: rgb(151, 253, 253) !important;    
-}
-
-.img-ref {
-    display: flex;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #939393;
-    gap: 3.5%;
-    width: 35.9%;
-    align-items: center;
-    box-shadow: 0 0px 3px rgb(157, 248, 254);
-}
-
-.quiz {
-    display: flex;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(255, 157, 0);
-    background-color: #f974002a;
-    gap: 8%;
-    align-items: center;
-    box-shadow: 0 0px 10px rgb(252, 152, 1);
-}
-
-.quiz p {
-    color: #ffdd03;
-}
-
-.iniciar-sesion {
-    display: flex;
-    color: #0b0b0e !important;
-    background-color: white;
-    font-weight: 500 !important;
-    gap: 10%;
-    align-items: center;
-    box-shadow: 0 0px 8px rgb(255, 255, 255);
-}
-
-.icon-sesion {
-    color: #0b0b0e !important;
-}
-
-.material-symbols-outlined {
-    display: flex;
-    color: #939393;
-
-}
-
-.icon-quiz {
-    display: flex;
-    color: #ffdd03;
-}
-/*------------------------------------------------------------------HOME-----------------------------------------------------------------------------------------*/
-.home {
-    display: flex;
-    flex-direction: row;
-    border-width: 1px;
-    border-color:#828282d7;
-    height: 60%;
-    max-height: 50%;
-    width: 80%;
-    margin-left: 10%;
-    background-image: url(../imagenes/Fondos/fondo-difuminado-3.png);
-    background-size: cover;
-    margin-bottom: 2.5%;
-
-}
-
-.home__left {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    height: 100%;
-}
-
-.home__element-1 {
-    display: flex;
-    width: 39.5%;
-    height: 2%;
-    background-color: #000000;
-    border-style: solid;
-    border-color: #00e5ff31;
-    border-width: 1px;
-    align-items: center;
-    padding: 7px;
-    margin-top: 2%;
-    margin-left: 5%;
-    box-shadow: 0 0px 10px rgba(0, 229, 255, 0.186);
-}
-
-.home__element-1-h2 {
-    display: flex;
-    font-size: 0.7rem;
-    align-self: center;
-    font-weight: 200;
-    letter-spacing: 2px;
-    margin-top: 3%;
-    color: #00e5ffae;
-}
-
-.home__icon-element-1 {
-    display: flex;
-    align-self: end;
-    margin-right: 10px;
-    margin-left: 5px;
-    margin-top: 0;
-    margin-bottom: 0%;
-    color:#00e5ff;
-    font-size: 0.8rem !important;
-}
-
-/* 1. Creas la animación */
-@keyframes alerta-brillo {
-  0%, 100% {
-    opacity: 1;
-    text-shadow: none;
-  }
-  50% {
-    opacity: 0.4;
-    /* Efecto de brillo verde táctico (puedes cambiar el color) */
-    text-shadow: 0 0 8px rgba(0, 255, 100, 0.8); 
-  }
-}
-
-/* 2. Se la aplicas a tu clase de icono */
-.icon-elemento-1 {
-  animation: alerta-brillo 1.5s infinite ease-in-out;
-}
-
-.home__tittle {
-    display: flex;
-    font-size: 2.5rem;
-    margin: 0;
-    margin-left: 5%;
-    margin-top: 3%;
-}
-
-
-.home__summary {
-    margin-left: 5%;
-    color:#e4e4e4;
-    margin-top: 1%;
-    filter: drop-shadow(3px 2px 2px rgba(0, 0, 0, 1));
-    font-size: 0.9rem;
-    font-weight: 500;
-    width: 80%;
-    transition: all 0.5s ease-in-out;
-}
-
-.home__summary:hover {
-    color: #ffffff;
-    font-size: 0.93rem;
-}
-
-.home__btns {
-    display: flex;
-    margin-top: 2%;
-    width: 95%;
-    height: 10%;
-}
-
-.home__btn {
-    border-style: solid;
-    border-width: 1px;
-    margin: 0;
-    margin-left: 5%;
-    width: 20%;
-    height: 100%;
-    background-color: #000000;
-    transition: all 0.7s ease-in-out;
-}
-
-.home__btn--quiz {
-    border-color: rgba(255, 157, 0, 0.6);
-    box-shadow: 0 0px 10px rgba(252, 152, 1, 0.378);
-    background-color: #f9740009;
-}
-
-.home__btn--quiz:hover {
-    scale: 1.1;
-    border-color: #ffea03;
-}
-
-.home__btn--classification:hover {
-    scale: 1.1;
-    border-color: #03ffe2;
-    color:#18dffefb !important;
-    background-color: #00636e5e;
-}
-
-.home__btn--classification {
-    width: 40% !important;
-    background-color: #000d2c70;
-    border-color: #0084ff80;
-    box-shadow: 0 0px 10px rgba(1, 80, 252, 0.204);
-    color: #acf7ffcf;
-}
-
-.home__btn--icon-clasificacion {
-    color:#18c1fed0 !important;
-}
-
-.home__btn--text {
-    display: flex;
-    margin: 0%;
-    margin-top: 5.5%;
-}
-
-.home__btn--text-2 {
-    margin-top: 3% !important;
-}
-
-.home__btn--icon {
-    margin-left: 5%;
-    margin-right: 5%;
-    display: flex;
-    color: #ffffff;
-    transition: all 0.7s ease-in-out;
-}
-
-.home__btn--icon-quiz {
-    color: #ffdd03;
-}
-
-.home__btn--simulation {
-    border-style: solid;
-    border-width: 1px;
-    margin: 0;
-    margin-left: 4.5%;
-    width: 62%;
-    height: 10%;
-    background-color: #ffffff;
-    margin-top: 4%;
-    transition: all 0.7s ease-in-out;   
-    box-shadow: 0 0px 10px rgba(255, 255, 255, 0.445);
-}
-
-.home__btn--simulation:hover {
-    scale: 1.1;
-    background-color: #000000;
-}
-
-.home__btn--simulation:hover .home__text--simulation {
-    color: #ffffff;
-}
-
-.home__text--simulation {
-    display: flex;
-    margin: 0%;
-    margin-top: 2%;
-    color: #000000;
-    transition: all 0.7s ease-in-out;
-}
-
-.home__btn--simulation:hover .home__btn--icon-simulation {
-    color: #ffffff !important;
-}
-
-.home__btn--icon-simulation {
-    margin-left: 5%;
-    margin-right: 5%;
-    display: flex;
-    color: #060606 !important;
-    transition: all 0.7s ease-in-out;
-}
-
-
-
-/*-------------------------------------------------------------INFORMACION R-----------------------------------------------------------------------------------------*/
-.home__right {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    width: 40%;
-    height: 65%;
-    margin: 0;
-    margin-right: 5%;
-
-}
-
-.icon-ultimas-actualizaciones {
-    display: flex;
-    color: #ffffff !important;
-    margin-left: 3%;
-    margin-right: 4%;
-
-}
-
-.ultimas-actualizaciones-icon-titulo {
-    display: flex;
-    border-width: 1px;
-    background-color: #174c6516;
-    margin: 0;
-}
-
-.ultimas-actualizaciones-titulo {
-    display: flex;
-    border-width: 1px;
-    margin: 0;
-    width: 100%;
-    margin-top: 1%;
-}
-
-.ultimas-actualizaciones {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 100%;
-    background-color: #174c6516;
-    gap: 10px;
-}
-
-.ultimas-actualizaciones-l {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 45%;
-    gap: 10px;
-}
-
-.ultimas-actualizaciones-r {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 45%;
-    gap: 10px;
-}
-
-.actualizacion-1 {
-    display: flex;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 4%;
-    height: 40%;
-    margin-top: 8%;
-} 
-
-.actualizacion-2 {
-    display: flex;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 4%;
-    height: 40%;
-} 
-
-.actualizacion-3 {
-    display: flex;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 4%;
-    height: 40%;
-    margin-top: 8%;
-} 
-
-.actualizacion-4 {
-    display: flex;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 4%;
-    height: 40%;
-}
-/*---------------------------------------------------------------END---HOME-----------------------------------------------------------------------------------------*/
-hr {
-    display: flex;
-    margin: 0;
-    width: 80%;
-    margin-left: 10%;
-    opacity: 0.5;
-}
-
-/* ---------------------------------------------------------------CATEGORIAS------------------------------------------------------------------------------------------- */
-.categorias {
-     display: flex;
-    flex-direction: column;
-    height: 70%;
-    max-height: 44%;
-    width: 80%;
-    margin-top: 1%;
-    margin-left: 10%;
-    gap: 30px;
-}
-
-.categorias__filas {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    height: 50%;
-}
-
-.categoria {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 32%;
-    position: relative;     /* Necesario para posicionar la capa encima */
     overflow: hidden;
-    transition: all 0.4s ease-in-out;
+    font-family: "Arsenal", sans-serif;
 }
 
-.categoria::after {
-    content: '';
+/* ===========================================================
+   LA CAJA MADRE DE LA INTRO
+   =========================================================== */
+.intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    overflow: hidden;
+    transition: opacity 0.9s ease, visibility 0.9s ease;
+}
+
+.intro--oculta {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* ===========================================================
+   CAPA 1: LOS HILOS (el JS dibuja los <path> adentro de este SVG)
+   =========================================================== */
+#canvasHilos {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    /* Sombra interior o degradado de viñeta */
-    box-shadow: inset 0px 0px 700px rgba(0, 16, 35, 0.961); 
-    pointer-events: none;   /* Crucial: permite que los clics y el cursor atraviesen esa capa y lleguen directamente a lo que esté debajo o dentro. */
-    transition: all 0.4s ease-in-out;
-}
-
-.categoria:hover::after {
-    box-shadow: inset 0px 0px 200px rgba(255, 255, 255, 0.507);
-}
-
-.categoria:hover {
-    box-shadow: 0 0px 20px rgba(206, 206, 206, 0.278);
-}
-
-.categoria:hover .categoria__icon {
-    scale: 1.2;
-}
-
-.categoria__numero-icon {
-    display: flex;
-    position: absolute;
-    flex-direction: row;
-    width: 100%;
-    height: 12%;
-    margin: 0;
-    margin-top: 2%;
-    gap: 63%;
-    
-}
-
-.categoria__numero {
-    display: flex;
     z-index: 1;
-    margin: 0;
-    margin-left: 5%;
-    font-size: 0.9rem;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #ffffff;
-    background-color: #020202cb;
-    filter: opacity(0.8);
-    padding-left: 1%;
-    padding-right: 1%;
-    color: #dcedff;
 }
 
-.categoria__icon {
-    color: #ffffff;
-    z-index: 1;
-    transition: all 0.5s ease-in-out;
+.hilo {
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    filter: drop-shadow(0 0 6px currentColor);
 }
 
-.categoria__icon-tittle {
-    display: flex;
-    position: absolute;
-    width: 100%;
-    height: 20%;
+/* ===========================================================
+   CAPA 2: EL LOGO
+   =========================================================== */
+.intro__logo {
+    position: relative;
     z-index: 2;
-    margin-top: 10%;
-    margin-left: 3%;
-    margin-top: 9%;
-    
-}
-
-.categoria__icon-right {
     display: flex;
-    color: red;
-    margin-top: 2.5%;
+    font-size: 9rem;
+    font-weight: 500;
+    letter-spacing: 2px;
 }
 
-.categoria__tittle {
-    display: flex;
-    margin: 0;
-    font-weight: 400;
-    transition: all 0.5s ease-in-out;
-}
-
-.categoria:hover .categoria__tittle {
-    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 1));
-}
-
-.categoria__resumen {
-    display: flex;
-    position: absolute;
-    width: 90%;
-    z-index: 2;
-    margin: 0;
-    margin-top: 19%;
-    margin-left: 5%;
-    font-size: 0.7rem;
-    color: #fefdfdd9;
-    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 1));
-    transition: all 0.5s ease-in-out;
-}
-
-.categoria:hover .categoria__resumen {
-    color: #000000;
-    filter: drop-shadow(0px 0px 10px rgb(255, 254, 254));
-    font-weight: 700;
-}
-
-.categoria__hr {
-    display: flex;
-    position: absolute;
-    width: 90%;
-    z-index: 3;
-    margin-top: 31%;
-    margin-left: 5%;
-}
-
-.categoria__btn {
-    display: flex;
-    position: absolute;
-    border-style: solid;
-    border-width: 1px;
-    width: 90%;
-    height: 10%;
-    z-index: 2;
-    margin-top: 33%;
-    margin-left: 5%;
-    padding-bottom: 1%;
-    padding-top: 1%;
-    font-size: 0.9rem;
-    font-weight: 300;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff81;
-    color: #000000;
-    text-decoration: none;
-    transition: all 0.4s ease-in-out;
-}
-
-.categoria__btn:visited {
-    color: #000000;
-}
-
-.categoria__btn:hover {
-    scale: 1.2;
-    background-color: #ffffff;
-    font-weight: 600;
-}
-
-.categoria__icon-btn {
-    color: #000000;
-    margin-left: 5%;
-}
-/* ---------------------------------------------------------FIN---CATEGORIAS------------------------------------------------------------------------------------------- */
-
-/* ---------------------------------------------------------------ESLOGAN-------------------------------------------------------------------------------------------------------- */
-.eslogan {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    height: 5%;
-    border-style: solid;
-    border-width: 1px;
-    margin: 0;
-    margin-top: 5.9%;
-    margin-left: 10%;
-    justify-content: center;
-    gap: 10px;
-}
-
-.eslogan__frase {
-    display: flex;
-    align-items: center;
-    color: #797979;
-    
-}
-
-.eslogan__frase--principal {
-    color: #ffffff;
-}
-
-.eslogan__icon--principal {
-    color: #ffffff !important;
-    align-self: center;
-}
-
-@keyframes eslogan-parpadeo {
-    0%, 100% {
-        opacity: 1;
-        
-    }
-
-    50% {
-        opacity: 0.5;
-        filter: drop-shadow(0px 0px 10px rgba(255, 0, 0, 0.467));
-    }
-}
-
-.eslogan__frase--principal {
-    animation: eslogan-parpadeo 2s infinite ease-in-out;
-}
-
-.eslogan__icon {
-    animation: eslogan-parpadeo 2s infinite ease-in-out;
-}
-
-.eslogan__icon {
-    align-self: center;
-    color: #c2c2c2;
-}
-
-.footer {
-    display: flex;
-    flex-direction: row;
-    width: 99.5%;
-    height: 5%;
-    border-style: solid;
-    margin: 0;
-    margin-top: 3%;
-}
-/* ---------------------------------------------------------FIN----------------------------------------------------------------------------------------------------------- */
-
-
-/*-----------------------------------------------------------FRASES-------------------------------------------------------*/
-/* Centra el contenedor en la mitad libre de tu cielo */
-.bienvenida-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-left: 22.2%;
-    max-width: 900px;
-    min-height: 80px; /* Evita que la pantalla parpadee al cambiar de frase */
-}
-
-/* El diseño de tus titulares premium sobre la explosión */
-.frase-carrusel {
-    font-family: sans-serif;
-    font-size: 1.2rem; 
-    color: #ffffff;
-    letter-spacing: 8px;
-    font-weight: 100;
-    /* Filtro de sombra característico para que resalte sobre el fondo claro */
-    
-    
-    /* EL AMORTIGUADOR: Le dice al CSS que suavice la opacidad en 0.5 segundos */
-    transition: opacity 0.5s ease-in-out;
-}
-
-/* LA CLASE INVENTADA: El interruptor que JavaScript encenderá y apagará en vivo */
-.frase-oculta {
+.intro__logo span {
+    display: inline-block;
     opacity: 0;
+    filter: blur(12px);
+    transform: translateY(20px);
+    background: linear-gradient(135deg, #0c0c0c 0%, #f2f6fd 50%, #b6b6b6 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    filter: blur(12px) drop-shadow(0 0 25px rgba(0, 0, 0, 0.6));
+    animation: revelarLetra 1s ease forwards;
 }
 
-/*-----------------------------------------------------------FRASES-------------------------------------------------------*/
-/*------------------------------------------------------------------INICIO---------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------------------REPRODUCTOR---------------------------------------------------------------------------------*/
-/* --- POSICIONAMIENTO DEL REPRODUCTOR TÁCTICO --- */
-.music-widget {
-    position: fixed;            /* Lo clava flotando en la pantalla aunque bajes con el scroll */
-    bottom: 25px;               /* Separación de 25 píxeles desde el borde inferior */
-    right: 25px;                /* Separación de 25 píxeles desde el borde derecho */
-    z-index: 2500;              /* Capa ultra alta para que flote por encima del fondo borroso */
+.intro__logo span:nth-child(1) { animation-delay: 0.5s; }
+.intro__logo span:nth-child(2) {
+    animation-delay: 0.8s;
+    animation-name: revelarLetraConRebote;
 }
 
-/* --- DISEÑO DEL BOTÓN CIRCULAR (Estilo tus tarjetas) --- */
-.btn-music {
-    width: 55px;                /* Ancho del botón */
-    height: 55px;               /* Alto del botón */
-    border-radius: 50%;         /* ALTO VALOR: Convierte el botón cuadrado en un círculo perfecto */
-    
-    /* ESTÉTICA KERNID: Usamos tu color verde oscuro translúcido y tus líneas discontinuas */
-    background-color: rgba(28, 43, 41, 0.65); 
-    border: 1px dashed rgba(255, 255, 255, 0.4); 
-    
-    color: #ffffff;             /* Color blanco para los emojis */
-    font-size: 1.3rem;          /* Tamaño del emoji de música dentro del círculo */
-    cursor: pointer;            /* Transforma el cursor en la manito (👆) al pasar el mouse */
-    
-    /* FLEXBOX INTERNO: Centra el emoji perfectamente en la mitad del círculo */
+@keyframes revelarLetra {
+    from { opacity: 0; filter: blur(12px) drop-shadow(0 0 25px rgba(255, 254, 255, 0)); transform: translateY(20px); }
+    to   { opacity: 1; filter: blur(0px) drop-shadow(0 0 25px rgba(120, 120, 120, 0.6)); transform: translateY(0); }
+}
+
+@keyframes revelarLetraConRebote {
+    0%   { opacity: 0; filter: blur(12px) drop-shadow(0 0 25px rgba(3, 3, 3, 0)); transform: translateY(20px) scale(0.5); }
+    60%  { opacity: 1; filter: blur(0px) drop-shadow(0 0 25px rgba(127, 126, 126, 0.6)); transform: translateY(-5px) scale(1.15); }
+    100% { opacity: 1; filter: blur(0px) drop-shadow(0 0 25px rgba(196, 196, 196, 0.6)); transform: translateY(0) scale(1); }
+}
+
+/* ===========================================================
+   CAPA 3: NOMBRE COMPLETO
+   =========================================================== */
+.intro__nombre {
+    position: relative;
+    z-index: 2;
+    margin-top: 14px;
+    font-size: 2.1rem;
+    font-weight: 300;
+    letter-spacing: 8px;
+    color: #e1ecf9;
+    opacity: 0;
+    animation: aparecerNombre 1s ease forwards;
+    animation-delay: 1s;
+}
+
+@keyframes aparecerNombre {
+    from { opacity: 0; transform: translateY(-8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ===========================================================
+   CONTENIDO REAL (esto seria tu inicio.html normal)
+   =========================================================== */
+.contenido {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Sombra sutil para darle volumen */
-    transition: all 0.2s ease;  /* Suaviza los cambios de animaciones a 0.2 segundos */
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
 }
 
-/* --- EFECTO VISUAL AL PASAR EL MOUSE (HOVER) --- */
-.btn-music:hover {
-    transform: scale(1.1);      /* El círculo crece un 10% de forma fluida */
-    border-style: solid;        /* Tus líneas discontinuas se vuelven una línea sólida continua */
-    background-color: rgba(28, 43, 41, 0.9); /* El fondo se vuelve más oscuro y denso */
+.barra-superior { 
+  display: flex;
+  width: 75%;
+  max-height: 5%;
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: row;
+  margin-bottom: 44%;
+ }
+
+.barra-superior__data {
+  display: flex;
+  height: 100%;
+  width: 25%;
+  flex-direction: row;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  gap: 2%;
 }
 
-/* --- EL TOQUE DE BRILLO BALÍSTICO (Cuando la música suena) --- */
-.btn-music.activo {
-    border-color: #ffb703;      /* El borde cambia a un amarillo de advertencia/balística */
-    box-shadow: 0 0 15px rgba(255, 183, 3, 0.4); /* Crea un resplandor luminoso amarillo */
-}  
-/*---------------------------------------------------REPRODUCTOR-----------------------------------------------------------*
+.barra-superior__data h2 {
+  display: flex;
+  font-size: 1.1rem;
+}
+
+.barra-superior__icon {
+  display: flex;
+  margin-top: 1%;
+  margin-left: 4%;
+  font-size: 1.1rem;
+}
+
+.barra-superior__personalization {
+  display: flex;
+  height: 100%;
+  width: 22%;
+  flex-direction: row;
+  border-style: solid;
+}
