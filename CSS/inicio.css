@@ -9,7 +9,7 @@ body {
     font-family: "Exo 2", Helvetica, sans-serif;
     color: white;
     overflow: hidden;
-    font-family: "Arsenal", sans-serif;
+    font-family: "Arsenal", "Arsenal SC", sans-serif;
 }
 
 /* ===========================================================
@@ -126,50 +126,109 @@ body {
 .contenido {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-self: flex-start;
     align-items: center;
     height: 100vh;
     width: 100vw;
     text-align: center;
+    
 }
 
 .barra-superior { 
   display: flex;
-  width: 75%;
-  max-height: 5%;
-  border-style: solid;
-  border-width: 1px;
+  width: 90%;
   flex-direction: row;
-  margin-bottom: 44%;
+  justify-items: start;
+  margin-top: 3vh;
+  flex-wrap: wrap;
  }
 
 .barra-superior__data {
   display: flex;
-  height: 100%;
-  width: 25%;
+  width: clamp(270px, 21vw, 8000px);
   flex-direction: row;
+  align-items: center;
   border-style: solid;
   border-width: 1px;
   border-radius: 10px;
   gap: 2%;
+  flex-wrap: wrap;
 }
 
-.barra-superior__data h2 {
+.barra-superior h2 {
   display: flex;
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 1.3vw, 5rem );
+  font-weight: 100;
+  padding-bottom: 1.5%;
+  padding-top: 1.5%;
 }
 
 .barra-superior__icon {
   display: flex;
-  margin-top: 1%;
   margin-left: 4%;
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 1.1vw, 5rem );
 }
 
 .barra-superior__personalization {
   display: flex;
-  height: 100%;
-  width: 22%;
+  width: clamp(250px, 20vw, 8000px);
   flex-direction: row;
+  align-items: center;
   border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  gap: 2%;
 }
+
+.barra-superior__icon-important {
+    background: linear-gradient(180deg, #f90404 10%, #e31bf5 25%, #0d90f5 40%, #2cf50d 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: clamp(1.2rem, 1vw, 100rem);
+}
+
+.music-widget {
+    position: fixed;            /* Lo clava flotando en la pantalla aunque bajes con el scroll */
+    bottom: 25px;               /* Separación de 25 píxeles desde el borde inferior */
+    right: 25px;                /* Separación de 25 píxeles desde el borde derecho */
+    z-index: 2500;              /* Capa ultra alta para que flote por encima del fondo borroso */
+}
+
+/* --- DISEÑO DEL BOTÓN CIRCULAR (Estilo tus tarjetas) --- */
+.btn-music {
+    width: 55px;                /* Ancho del botón */
+    height: 55px;               /* Alto del botón */
+    border-radius: 50%;         /* ALTO VALOR: Convierte el botón cuadrado en un círculo perfecto */
+    
+    /* ESTÉTICA KERNID: Usamos tu color verde oscuro translúcido y tus líneas discontinuas */
+    background-color: rgba(28, 43, 41, 0.65); 
+    border: 1px dashed rgba(255, 255, 255, 0.4); 
+    
+    color: #ffffff;             /* Color blanco para los emojis */
+    font-size: 1.3rem;          /* Tamaño del emoji de música dentro del círculo */
+    cursor: pointer;            /* Transforma el cursor en la manito (👆) al pasar el mouse */
+    
+    /* FLEXBOX INTERNO: Centra el emoji perfectamente en la mitad del círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Sombra sutil para darle volumen */
+    transition: all 0.2s ease;  /* Suaviza los cambios de animaciones a 0.2 segundos */
+}
+
+/* --- EFECTO VISUAL AL PASAR EL MOUSE (HOVER) --- */
+.btn-music:hover {
+    transform: scale(1.1);      /* El círculo crece un 10% de forma fluida */
+    border-style: solid;        /* Tus líneas discontinuas se vuelven una línea sólida continua */
+    background-color: rgba(28, 43, 41, 0.9); /* El fondo se vuelve más oscuro y denso */
+}
+
+/* --- EL TOQUE DE BRILLO BALÍSTICO (Cuando la música suena) --- */
+.btn-music.activo {
+    border-color: #ffb703;      /* El borde cambia a un amarillo de advertencia/balística */
+    box-shadow: 0 0 15px rgba(255, 183, 3, 0.4); /* Crea un resplandor luminoso amarillo */
+}  
+/*---------------------------------------------------REPRODUCTOR-----------------------------------------------------------*

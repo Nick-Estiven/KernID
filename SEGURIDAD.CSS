@@ -871,3 +871,91 @@ hr {
     box-shadow: 0 0 15px rgba(255, 183, 3, 0.4); /* Crea un resplandor luminoso amarillo */
 }  
 /*---------------------------------------------------REPRODUCTOR-----------------------------------------------------------*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="intro" id="intro">
+        <!-- Este SVG empieza vacío -- JS le va a inyectar y mover los <path> -->
+        <svg id="canvasHilos" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice"></svg>
+
+        <div class="intro__logo">
+            <span>K</span><span>!</span>
+        </div>
+
+        <div class="intro__nombre">KERN!D</div>
+    </div>
