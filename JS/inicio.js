@@ -90,3 +90,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 3000);
 
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const personalization = document.querySelector('.panel-personalization');
+    const botonPersonalization = document.querySelector('.barra-superior__personalization');
+
+    botonPersonalization.addEventListener('click', () => {
+        personalization.classList.toggle ('panel-personalization--hidden');
+
+    });
+});

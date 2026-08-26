@@ -134,6 +134,23 @@ body {
     
 }
 
+.panel-personalization {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    border-style: solid;
+    top: 15vh;
+    width: clamp(300px, 90vw, 3000px);
+    transition: all 0.7s ease-in-out;
+    
+}
+
+
+.panel-personalization--hidden {
+    transform: translateY(-50vh);
+    pointer-events: none;
+}
+
 .barra-superior { 
   display: flex;
   width: 90%;
@@ -141,6 +158,8 @@ body {
   justify-items: start;
   margin-top: 3vh;
   flex-wrap: wrap;
+  column-gap: 2%;
+  row-gap: 15%;
  }
 
 .barra-superior__data {
@@ -150,7 +169,7 @@ body {
   align-items: center;
   border-style: solid;
   border-width: 1px;
-  border-radius: 10px;
+  border-radius: 15px;
   gap: 2%;
   flex-wrap: wrap;
 }
@@ -176,7 +195,7 @@ body {
   align-items: center;
   border-style: solid;
   border-width: 1px;
-  border-radius: 10px;
+  border-radius: 15px;
   flex-wrap: wrap;
   gap: 2%;
 }
@@ -195,40 +214,3 @@ body {
     right: 25px;                /* Separación de 25 píxeles desde el borde derecho */
     z-index: 2500;              /* Capa ultra alta para que flote por encima del fondo borroso */
 }
-
-/* --- DISEÑO DEL BOTÓN CIRCULAR (Estilo tus tarjetas) --- */
-.btn-music {
-    width: 55px;                /* Ancho del botón */
-    height: 55px;               /* Alto del botón */
-    border-radius: 50%;         /* ALTO VALOR: Convierte el botón cuadrado en un círculo perfecto */
-    
-    /* ESTÉTICA KERNID: Usamos tu color verde oscuro translúcido y tus líneas discontinuas */
-    background-color: rgba(28, 43, 41, 0.65); 
-    border: 1px dashed rgba(255, 255, 255, 0.4); 
-    
-    color: #ffffff;             /* Color blanco para los emojis */
-    font-size: 1.3rem;          /* Tamaño del emoji de música dentro del círculo */
-    cursor: pointer;            /* Transforma el cursor en la manito (👆) al pasar el mouse */
-    
-    /* FLEXBOX INTERNO: Centra el emoji perfectamente en la mitad del círculo */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Sombra sutil para darle volumen */
-    transition: all 0.2s ease;  /* Suaviza los cambios de animaciones a 0.2 segundos */
-}
-
-/* --- EFECTO VISUAL AL PASAR EL MOUSE (HOVER) --- */
-.btn-music:hover {
-    transform: scale(1.1);      /* El círculo crece un 10% de forma fluida */
-    border-style: solid;        /* Tus líneas discontinuas se vuelven una línea sólida continua */
-    background-color: rgba(28, 43, 41, 0.9); /* El fondo se vuelve más oscuro y denso */
-}
-
-/* --- EL TOQUE DE BRILLO BALÍSTICO (Cuando la música suena) --- */
-.btn-music.activo {
-    border-color: #ffb703;      /* El borde cambia a un amarillo de advertencia/balística */
-    box-shadow: 0 0 15px rgba(255, 183, 3, 0.4); /* Crea un resplandor luminoso amarillo */
-}  
-/*---------------------------------------------------REPRODUCTOR-----------------------------------------------------------*
