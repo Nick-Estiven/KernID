@@ -142,13 +142,29 @@ body {
     top: 15vh;
     width: clamp(300px, 90vw, 3000px);
     transition: all 0.7s ease-in-out;
-    
 }
 
 
 .panel-personalization--hidden {
     transform: translateY(-50vh);
     pointer-events: none;
+}
+
+.panel-personalization__introducction {
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+}
+
+.panel-personalization__introduccion-icon {
+    display: flex;
+    border-style: solid;
+    width: 30%;
+}
+
+.panel-personalization__introducction-tittle p {
+    display: flex;
+
 }
 
 .barra-superior { 
