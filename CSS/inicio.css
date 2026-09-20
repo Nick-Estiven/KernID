@@ -180,7 +180,7 @@ body {
 
 .barra-superior__data {
   display: flex;
-  width: clamp(270px, 21vw, 8000px);
+  width: clamp(310px, 27vw, 8000px);
   flex-direction: row;
   align-items: center;
   border-style: solid;
@@ -188,11 +188,12 @@ body {
   border-radius: 15px;
   gap: 2%;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .barra-superior h2 {
   display: flex;
-  font-size: clamp(1rem, 1.3vw, 5rem );
+  font-size: clamp(1rem, 1vw, 5rem );
   font-weight: 100;
   padding-bottom: 1.5%;
   padding-top: 1.5%;
@@ -200,13 +201,12 @@ body {
 
 .barra-superior__icon {
   display: flex;
-  margin-left: 4%;
   font-size: clamp(1rem, 1.1vw, 5rem );
 }
 
 .barra-superior__personalization {
   display: flex;
-  width: clamp(250px, 20vw, 8000px);
+  width: clamp(250px, 15.9vw, 8000px);
   flex-direction: row;
   align-items: center;
   border-style: solid;
@@ -214,6 +214,7 @@ body {
   border-radius: 15px;
   flex-wrap: wrap;
   gap: 2%;
+  justify-content: center;
 }
 
 .barra-superior__icon-important {
@@ -224,9 +225,81 @@ body {
     font-size: clamp(1.2rem, 1vw, 100rem);
 }
 
-.music-widget {
-    position: fixed;            /* Lo clava flotando en la pantalla aunque bajes con el scroll */
-    bottom: 25px;               /* Separación de 25 píxeles desde el borde inferior */
-    right: 25px;                /* Separación de 25 píxeles desde el borde derecho */
-    z-index: 2500;              /* Capa ultra alta para que flote por encima del fondo borroso */
+.barra-superior__modo {
+  display: flex;
+  width: clamp(120px, 11vw, 8000px);
+  flex-direction: row;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 15px;
+  flex-wrap: wrap;
+  gap: 2%;
+  justify-content: center;
+}
+
+.barra-superior--mitad {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+}
+
+@media (max-width: 750px) {
+.barra-superior--mitad {margin-left: 0;}
+}
+
+
+.barra-superior__wallpapers {
+    flex-direction: row;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+    align-self: center;
+    filter: opacity(0.55);
+}
+
+.barra-superior__wallpapers h2 {
+    margin-top: 0.2vh;
+    margin-bottom: 0.2vh;
+    margin-left: 3vh;
+    margin-right: 3vh;
+}
+
+.barra-superior__audio {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+    filter: opacity(0.55);
+    align-self: center;
+}
+
+.barra-superior__audio h2 {
+    margin-top: 0.2vh;
+    margin-bottom: 0.2vh;
+    margin-left: 3vh;
+    margin-right: 3vh;
+}
+
+.enciclopedia-support {
+    display: flex;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+    margin-top: 5vh;
+}
+
+.enciclopedia-support h2 {
+    font-weight: 100;
+    font-size: clamp(0.9rem, 1.2vw, 100rem);
+    margin-bottom: 0.2vh;
+    margin-left: 3vh;
+    margin-right: 3vh;
+}
+
+.titulo {
+    display: flex;
+    font-size: clamp(5rem, 7vw, 100rem);
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 5vh;
 }
