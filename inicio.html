@@ -11,9 +11,8 @@
   <link rel="stylesheet" href="CSS/inicio.css">
 </head>
 <body>
-
-    
-   
+ 
+    <svg id="wallpaper-lines"></svg>
 
     <div class="contenido">
 
@@ -54,12 +53,159 @@
         </nav>
 
         <div class="enciclopedia-support">
-            <h2><MILITAR style="word-spacing: 0.8vw;">MILITAR // BALISTICA, VEHICULOS DE COMBATE Y MÁS</span></h2>
+            <h2><span style="word-spacing: 0.8vw;">MILITAR // BALISTICA, VEHICULOS DE COMBATE Y MÁS</span></h2>
         </div>
 
         <h1 class="titulo">KERN<span style="color: rgb(0, 195, 255);">!</span>D</h1>
         
-      
+        <div class="bienvenida-container">
+            <!--El id="textoDinamico" es obligatorio para conectar con el script -->
+            <h1 id="textoDinamico" class="frase-carrusel">SIMULA DISPAROS</h1>
+        </div>
+
+        <form class="search-box">
+                <input type="search"  class="search-bar" placeholder="Buscar temas, municiones, vehiculos, etc.." aria-label="Buscar">
+                <div class="lupa">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </div>
+        </form>
+
+        <nav class="accesos-rapidos">
+            <h2><span class="material-symbols-outlined accesos-rapidos__icon">switch_access_2</span>ACCESOS RÁPIDOS:</h2>
+            <p class="accesos-rapidos__btn">+Pz.Kpfw. VI Tiger</p>
+            <p class="accesos-rapidos__btn">+Königstiger</p>
+            <p class="accesos-rapidos__btn">+SR-71 Blackbird</p>
+            <p class="accesos-rapidos__btn">+A-10 Thunderbolt</p>
+            <p class="accesos-rapidos__btn">+Bismarck</p>
+            <p class="accesos-rapidos__btn">+Yamato</p>
+            <p class="accesos-rapidos__btn">+T-90</p>
+            <p class="accesos-rapidos__btn">+M1 Abrams</p>
+            <p class="accesos-rapidos__btn">+AH-64 Apache</p>
+            <p class="accesos-rapidos__btn"><span class="material-symbols-outlined">add</span></p>
+        </nav>
+
+        <nav class="functions">
+            <div class="functions__btn">
+                <hr class="functions__start-line">
+                <div class="functions__header">
+                    <p class="functions__number">01 - SIM</p>
+                    <p class="functions__start-tag">2D - 3D</p>
+                </div>
+
+                <div class="functions__icon-tittle">
+                    <div class="functions__icon-box"><span class="material-symbols-outlined functions__icon">center_focus_weak</span></div>
+                    <div class="functions__tittle">
+                        <h2>3D</h2>
+                        <p>Simula disparos.</p>
+                    </div>
+                </div>
+
+                <hr class="functions__line">
+
+                <div class="functions__end-tag">
+                    <p><BASLISTICA style="word-spacing: 5vw;">BASLISTICA PROVE</span> </p>
+                </div>
+            </div>
+
+
+
+            <div class="functions__btn">
+                <hr class="functions__start-line">
+                <div class="functions__header">
+                    <p class="functions__number">02 - QUIZ</p>
+                    <p class="functions__start-tag">10-20 Preg</p>
+                </div>
+
+                <div class="functions__icon-tittle">
+                    <div class="functions__icon-box"><span class="material-symbols-outlined functions__icon">book_ribbon</span></div>
+                    <div class="functions__tittle">
+                        <h2>QUIZ</h2>
+                        <p>Preguntas aletorias.</p>
+                    </div>
+                </div>
+
+                <hr class="functions__line">
+
+                <div class="functions__end-tag">
+                    <p><span style="word-spacing: 5vw;">EVALUACIÓN TEST</span> </p>
+                </div>
+            </div>
+
+
+
+            <div class="functions__btn">
+                <hr class="functions__start-line">
+                <div class="functions__header">
+                    <p class="functions__number">03 - RANK</p>
+                    <p class="functions__start-tag">TOP 10</p>
+                </div>
+
+                <div class="functions__icon-tittle">
+                    <div class="functions__icon-box"><span class="material-symbols-outlined functions__icon">rewarded_ads</span></div>
+                    <div class="functions__tittle">
+                        <h2>CLASIF.</h2>
+                        <p>Top globales.</p>
+                    </div>
+                </div>
+
+                <hr class="functions__line">
+
+                <div class="functions__end-tag">
+                    <p><span style="word-spacing: 5vw;">TABLA RANGO</span> </p>
+                </div>
+            </div>
+
+
+
+            <div class="functions__btn">
+                <hr class="functions__start-line">
+                <div class="functions__header">
+                    <p class="functions__number">04 - IMG</p>
+                    <p class="functions__start-tag">DOWLOAD</p>
+                </div>
+
+                <div class="functions__icon-tittle">
+                    <div class="functions__icon-box"><span class="material-symbols-outlined functions__icon">photo_prints</span></div>
+                    <div class="functions__tittle">
+                        <h2>GALERIA</h2>
+                        <p>Descarga imagenes.</p>
+                    </div>
+                </div>
+
+                <hr class="functions__line">
+
+                <div class="functions__end-tag">
+                    <p><span style="word-spacing: 5vw;">IMG 4K-HD</span></p>
+                </div>
+            </div>
+
+
+
+            <div class="functions__btn">
+                <hr class="functions__start-line">
+                <div class="functions__header">
+                    <p class="functions__number">05 - AUTH</p>
+                    <p class="functions__start-tag">INACTIVE</p>
+                </div>
+
+                <div class="functions__icon-tittle">
+                    <div class="functions__icon-box"><span class="material-symbols-outlined functions__icon">fingerprint</span></div>
+                    <div class="functions__tittle">
+                        <h2>CUENTA</h2>
+                        <p>Iniciar sesion.</p>
+                    </div>
+                </div>
+
+                <hr class="functions__line">
+
+                <div class="functions__end-tag">
+                    <p><span style="word-spacing: 5vw;">CUENTA ACCESO</span> </p>
+                </div>
+            </div>
+        </nav>
 
 <script src="JS/inicio.js"></script>
 </body>

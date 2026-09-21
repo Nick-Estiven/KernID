@@ -8,7 +8,6 @@ body {
     background-color: #000000;
     font-family: "Exo 2", Helvetica, sans-serif;
     color: white;
-    overflow: hidden;
     font-family: "Arsenal", "Arsenal SC", sans-serif;
 }
 
@@ -120,6 +119,16 @@ body {
     to   { opacity: 1; transform: translateY(0); }
 }
 
+
+#wallpaper-lines{
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100vh; 
+}
+
+
+
 /* ===========================================================
    CONTENIDO REAL (esto seria tu inicio.html normal)
    =========================================================== */
@@ -131,7 +140,7 @@ body {
     height: 100vh;
     width: 100vw;
     text-align: center;
-    
+    transition: all 1s ease-in-out;
 }
 
 .panel-personalization {
@@ -172,7 +181,7 @@ body {
   width: 90%;
   flex-direction: row;
   justify-items: start;
-  margin-top: 3vh;
+  margin-top: 5vh;
   flex-wrap: wrap;
   column-gap: 2%;
   row-gap: 15%;
@@ -251,6 +260,7 @@ body {
 
 
 .barra-superior__wallpapers {
+    display: flex;
     flex-direction: row;
     border-style: solid;
     border-width: 1px;
@@ -286,7 +296,6 @@ body {
     border-style: solid;
     border-width: 1px;
     border-radius: 15px;
-    margin-top: 5vh;
 }
 
 .enciclopedia-support h2 {
@@ -301,5 +310,224 @@ body {
     display: flex;
     font-size: clamp(5rem, 7vw, 100rem);
     font-family:Arial, Helvetica, sans-serif;
+    margin-top: 1vh;
+}
+
+@media (max-width: 750px) {
+    .enciclopedia-support {margin-top: 10vh;}
+}
+
+@media (max-width: 1150px) {
+    .barra-superior--mitad {margin-left: 0;}
+}
+
+@media (min-width: 420px) {
+    .enciclopedia-support {margin-top: 7vh;}
+}
+
+@media (max-width: 439px) {
+    .enciclopedia-support {margin-left: 5vw;   margin-right: 5vw;}
+}
+
+.bienvenida-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 900px;
+}
+
+/* El diseño de tus titulares premium sobre la explosión */
+.frase-carrusel {
+    font-family: sans-serif;
+    font-size: 1.2rem; 
+    color: #ffffff;
+    letter-spacing: 8px;
+    font-weight: 100;
+    /* Filtro de sombra característico para que resalte sobre el fondo claro */    
+    /* EL AMORTIGUADOR: Le dice al CSS que suavice la opacidad en 0.5 segundos */
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* LA CLASE INVENTADA: El interruptor que JavaScript encenderá y apagará en vivo */
+.frase-oculta {
+    opacity: 0;
+}
+
+@media (max-width: 439px) {
+    .bienvenida-container {margin-left: 5vw;   margin-right: 5vw;}
+}
+
+.search-box {
+    display: flex;
+    border: 1px solid rgba(148, 236, 254, 0.297);
+    padding: 4px 10px;
+    background-color: #08080877;
+    border-radius: 3vh; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    transition: all 1s ease-in-out;
+    margin-top: 3vh;
+    height: 8vh;
+    width: clamp(350px, 61vw, 1500px);
+}
+
+.lupa {
+    display: flex;
+    position: absolute;
+    color: #466f81;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 15px 25px;
+    background: transparent;
+    border: none; /* Elimina el borde por defecto */
+    outline: none; /* Elimina el borde de enfoque por defecto */
+    font-size: 16px;
+    color: #faf7f7;
+}
+
+/* Efecto visual al hacer clic en el buscador */
+.search-box:focus-within {
+    box-shadow: 0 4px 20px rgba(0, 123, 255, 0.384);
+}
+
+.search-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 20px rgba(0, 123, 255, 0.384);
+}
+
+.accesos-rapidos {
+    display: flex;
+    flex-direction: row;
+    width: clamp(350px, 61vw, 1500px);
+    gap: 1vw;
+    flex-wrap: wrap;
+    margin-top: 2.2vh;
+}
+
+.accesos-rapidos__icon {
+    display: flex;
+    font-size: 20px;
+    margin-right: clamp(0.5vw, 0.7vw, 1vw)
+}
+
+.accesos-rapidos h2 {
+    display: flex;
+    font-size: clamp(0.8rem, 1vw, 100rem);
+    font-weight: 100;
+
+}
+
+.accesos-rapidos__btn {
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 1px;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    padding-bottom: 0.1vh;
+}
+
+.accesos-rapidos p {
+    font-size: clamp(0.95rem, 0.1vw, 100rem);
+}
+
+.functions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1vw;
     margin-top: 5vh;
+}
+
+.functions__btn {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+    border-color: #272727;
+    overflow: hidden;
+    width: clamp(200px, 17vw, 800px);
+}
+
+.functions__start-line {
+    display: flex;
+    width: 90%;
+    align-self: center;
+}
+
+.functions__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5.9vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.functions__header p {
+    font-size: 11px;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    padding-bottom: 0.4vh;
+    padding-top: 0.2vh;
+}
+
+.functions__number {
+    display: flex;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.functions__start-tag {
+    display: flex;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+}
+
+.functions__icon-tittle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.functions__icon-box {
+    display: flex;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+    width: clamp(50px, 4vw, 100px);
+    justify-content: center;
+}
+
+.functions__icon {
+    display: flex;
+    align-items: center;
+    
+}
+
+.functions__tittle {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.functions__line {
+    display: flex;
+    margin-top: 2vh;
+    margin-bottom: 0.5vh;
+}
+
+.functions__end-tag {
+    display: flex;
+    margin-bottom: 0.5vh;
+    justify-content: center;
 }
