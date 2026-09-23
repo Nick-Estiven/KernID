@@ -458,6 +458,7 @@ body {
     display: flex;
     width: 90%;
     align-self: center;
+    box-shadow: 0 4px 15px rgba(247, 245, 245, 0.966);
 }
 
 .functions__header {
