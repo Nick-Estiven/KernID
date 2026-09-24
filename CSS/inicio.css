@@ -452,13 +452,14 @@ body {
     border-color: #272727;
     overflow: hidden;
     width: clamp(200px, 15.9vw, 800px);
+    box-shadow: 0 4px 15px rgba(247, 245, 245, 0.137);
 }
 
 .functions__start-line {
     display: flex;
     width: 90%;
     align-self: center;
-    box-shadow: 0 4px 15px rgba(247, 245, 245, 0.966);
+    box-shadow: 0 4px 15px rgb(247, 245, 245);
 }
 
 .functions__header {
@@ -483,6 +484,7 @@ body {
     border-style: solid;
     border-width: 1px;
     border-radius: 5px;
+    border-color: rgba(243, 243, 242, 0.384);
 }
 
 .functions__start-tag {
@@ -491,6 +493,12 @@ body {
     border-width: 1px;
     border-radius: 10px;
 }
+
+.functions__start-tag-1 {border-color: #3ef8ef70; background-color: #3ef8ef27;}
+.functions__start-tag-2 {border-color: #ad02fd79; background-color: #ad02fd1a;}
+.functions__start-tag-3 {border-color: #e6f83e7e; background-color: #f8c63e1e;}
+.functions__start-tag-4 {border-color: #3ecdf875; background-color: #3e7ff831;}
+.functions__start-tag-5 {border-color: #3ef8ab71; background-color: #3ef8ab1c;}
 
 .functions__icon-tittle {
     display: flex;
@@ -508,11 +516,22 @@ body {
     justify-content: center;
 }
 
+.functions__icon-box-1 {border-color: #3ef8ef70; background-color: #3ef8ef27; }
+.functions__icon-box-2 {border-color: #ad02fd79; background-color: #ad02fd1a;}
+.functions__icon-box-3 {border-color: #e6f83e7e; background-color: #f8c63e1e;}
+.functions__icon-box-4 {border-color: #3e79f875; background-color: #3e79f813;}
+.functions__icon-box-5 {border-color: #3ef8ab71; background-color: #3ef8ab1c;}
+
 .functions__icon {
     display: flex;
     align-items: center;
-    
 }
+
+.functions__icon-1 {color: #3ef8ef;}
+.functions__icon-2 {color: #ae02fd;}
+.functions__icon-3 {color: #ffd000;}
+.functions__icon-4 {color: #3e79f8;}
+.functions__icon-5 {color: #3ef8ab;}
 
 .functions__tittle {
     display: flex;
