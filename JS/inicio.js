@@ -143,10 +143,77 @@ setInterval(cambiarFrase, 2500);
 document.addEventListener('DOMContentLoaded', () => {
     const svg = document.getElementById("wallpaper-lines");
     const lines = 5
+    const allLines = [];
+    const colores = ['#70edf8', '#cbcdff', '#fafafa', '#8aebff', '#fcfcfc'];
+    const pointsLine = 40; // cuántos segmentos usamos para dibujar cada curva
 
     for(let i = 0; i < 5; i++) {
     const line = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    allLines.push(line);
+    line.classList.add('hilo');
+        line.style.stroke = colores[i % colores.length];
+        line.style.color = colores[i % colores.length]; // para el drop-shadow "currentColor"
+        svg.appendChild(line);
+        allLines.push(line);
+    }
     
+    let time = 0;
+
+    // Convierte una lista de puntos [[x,y], [x,y], ...] en un
+    // string de curvas suaves, en vez de líneas rectas entre puntos.
+    // La técnica: en vez de ir DIRECTO a cada punto (esquina filosa),
+    // usamos el punto como "guía" y terminamos cada tramo en el punto
+    // MEDIO entre él y el siguiente — eso redondea cada unión.
+    function suavizarCurva(pointsLine) {
+        let d = `M ${pointsLine[0][0]},${pointsLine[0][1]}`;
+
+        for (let i = 1; i < pointsLine.length - 1; i++) {
+            const current = pointsLine[i];
+            const next = pointsLine[i + 1];
+            const pointMedX = (current[0] + next[0]) / 2;
+            const pointMedY = (current[1] + next[1]) / 2;
+
+            // Q = curva cuadrática: "actual" es el punto de control (guía),
+            // el punto medio es donde realmente termina el trazo
+            d += ` Q ${current[0]},${current[1]} ${pointMedX},${pointMedY}`;
+        }
+
+        // Cerramos con el último punto real
+        const last = pointsLine[pointsLine.length - 1];
+        d += ` L ${last[0]},${last[1]}`;
+
+        return d;
+    }
+
+    function animation() {
+        time += 0.008; // velocidad general del movimiento
+
+        allLines.forEach((line, indice) => {
+            let pointsLine = [];
+
+            // Cada hilo tiene su propia fase y amplitud, para que no
+            // se muevan todos exactamente igual (se ve más orgánico)
+            const phase = indice * 1.4;
+            const amplitude = 50 + indice * 15;
+            const direction = indice % 2 === 0 ? 1 : -1; // alternamos diagonal
+
+            for (let p = 0; p <= puntosPorHilo; p++) {
+                const x = (p / puntosPorHilo) * 1600;
+
+                // "Pinch" hacia el centro: la amplitud se reduce
+                // cerca de x=800 (mitad de pantalla) y crece en los bordes
+                const distanciaAlCentro = Math.abs(x - 800) / 800; // 0 en el centro, 1 en los bordes
+                const amplitudLocal = amplitude * (0.05 + distanciaAlCentro * 1);
+
+                const y = 450
+                    + direccion * (x - 800) * 0.15
+                    + Math.sin(x * 0.006 + time + phase) * amplitudLocal;
+
+                pointsLine.push([x, y]);
+            }
+
+            line.setAttribute('d', suavizarCurva(pointsLine));
+        });
     }
 });
 
